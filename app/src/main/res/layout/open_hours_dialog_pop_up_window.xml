@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="שים לב כי יש להכניס שעות בפורמט של 24 שעות כלומר חצות נחשבת כ-00:00"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:letterSpacing="0.1"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layoutDirection="rtl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="יום ראשון"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/rishon_minute_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusDown="@id/sheni_hour_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/rishon_hour_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/rishon_minute_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="36dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:id="@+id/rishon_minute_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusRight="@id/rishon_hour_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/rishon_hour_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/rishon_minute_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layoutDirection="rtl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="יום שני"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/sheni_minute_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusDown="@id/shlishi_hour_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/sheni_hour_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/sheni_minute_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="36dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:id="@+id/sheni_minute_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusRight="@id/sheni_hour_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/sheni_hour_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/sheni_minute_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layoutDirection="rtl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="יום שלישי"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/shlishi_minute_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusDown="@id/revei_hour_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/shlishi_hour_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/shlishi_minute_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="36dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:id="@+id/shlishi_minute_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusRight="@id/shlishi_hour_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/shlishi_hour_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/shlishi_minute_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layoutDirection="rtl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="יום רביעי"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/revei_minute_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusDown="@id/hamishi_hour_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/revei_hour_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/revei_minute_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="36dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:id="@+id/revei_minute_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusRight="@id/revei_hour_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/revei_hour_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/revei_minute_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layoutDirection="rtl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="יום חמישי"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/hamishi_minute_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusDown="@id/shishi_hour_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/hamishi_hour_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/hamishi_minute_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="36dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:id="@+id/hamishi_minute_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusRight="@id/hamishi_hour_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/hamishi_hour_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/hamishi_minute_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layoutDirection="rtl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="יום שישי"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/shishi_minute_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusDown="@id/shabat_hour_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/shishi_hour_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/shishi_minute_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="36dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:id="@+id/shishi_minute_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusRight="@id/shishi_hour_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/shishi_hour_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/shishi_minute_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layoutDirection="rtl">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="יום שבת"
+            android:layout_marginRight="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/shabat_minute_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusDown="@id/finish_btn_open_hours_dialog_pop_up_window"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/shabat_hour_of_close_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/shabat_minute_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textSize="36dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:id="@+id/shabat_minute_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:hint="דקות"
+            android:digits="2"
+            android:nextFocusRight="@id/shabat_hour_of_close_hour_edit_text_open_hour_dialog"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/shabat_hour_of_open_hour_edit_text_open_hour_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="שעה"
+            android:digits="2"
+            android:nextFocusRight="@id/shabat_minute_of_open_hour_edit_text_open_hour_dialog"/>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/finish_btn_open_hours_dialog_pop_up_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="סיום"
+        android:layout_marginTop="24dp"/>
+
+
+</LinearLayout>

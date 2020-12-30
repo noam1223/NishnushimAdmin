@@ -3,40 +3,45 @@ package com.example.nishnushimadmin.helpClasses;
 import android.net.Uri;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Restaurant implements Serializable {
 
     String name;
     MyAddress myAddress;
+    List<AreasForDeliveries> areasForDeliveries;
     String phoneNumber;
-    String openHour, closeHour;
+    List<String> openHour, closeHour;
     String dateOfAdd;
     String deliveryTime;
-    Uri photoProfile;
-    int amountOfDelivery;
-    int minAmountToDeliver;
     Uri logoUri;
     Uri profileImageUri;
+    int minAmountToDeliver;
+    boolean kosher;
 
 
     public Restaurant() {
+
     }
 
 
-    public Restaurant(String name, MyAddress myAddress, String phoneNumber, String openHour, String closeHour, String dateOfAdd, String deliveryTime, Uri photoProfile, int amountOfDelivery, int minAmountToDeliver, Uri logoUri, Uri profileImageUri) {
+
+    public Restaurant(String name, MyAddress myAddress, List<AreasForDeliveries> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, String deliveryTime,  Uri logoUri, Uri profileImageUri, int minAmountToDeliver, boolean kosher) {
         this.name = name;
         this.myAddress = myAddress;
+        this.areasForDeliveries = areasForDeliveries;
         this.phoneNumber = phoneNumber;
         this.openHour = openHour;
         this.closeHour = closeHour;
         this.dateOfAdd = dateOfAdd;
         this.deliveryTime = deliveryTime;
-        this.photoProfile = photoProfile;
-        this.amountOfDelivery = amountOfDelivery;
-        this.minAmountToDeliver = minAmountToDeliver;
         this.logoUri = logoUri;
         this.profileImageUri = profileImageUri;
+        this.minAmountToDeliver = minAmountToDeliver;
+        this.kosher = kosher;
     }
+
 
 
     public String getName() {
@@ -55,6 +60,14 @@ public class Restaurant implements Serializable {
         this.myAddress = myAddress;
     }
 
+    public List<AreasForDeliveries> getAreasForDeliveries() {
+        return areasForDeliveries;
+    }
+
+    public void setAreasForDeliveries(List<AreasForDeliveries> areasForDeliveries) {
+        this.areasForDeliveries = areasForDeliveries;
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -63,19 +76,19 @@ public class Restaurant implements Serializable {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getOpenHour() {
+    public List<String> getOpenHour() {
         return openHour;
     }
 
-    public void setOpenHour(String openHour) {
+    public void setOpenHour(List<String> openHour) {
         this.openHour = openHour;
     }
 
-    public String getCloseHour() {
+    public List<String> getCloseHour() {
         return closeHour;
     }
 
-    public void setCloseHour(String closeHour) {
+    public void setCloseHour(List<String> closeHour) {
         this.closeHour = closeHour;
     }
 
@@ -95,30 +108,6 @@ public class Restaurant implements Serializable {
         this.deliveryTime = deliveryTime;
     }
 
-    public Uri getPhotoProfile() {
-        return photoProfile;
-    }
-
-    public void setPhotoProfile(Uri photoProfile) {
-        this.photoProfile = photoProfile;
-    }
-
-    public int getAmountOfDelivery() {
-        return amountOfDelivery;
-    }
-
-    public void setAmountOfDelivery(int amountOfDelivery) {
-        this.amountOfDelivery = amountOfDelivery;
-    }
-
-    public int getMinAmountToDeliver() {
-        return minAmountToDeliver;
-    }
-
-    public void setMinAmountToDeliver(int minAmountToDeliver) {
-        this.minAmountToDeliver = minAmountToDeliver;
-    }
-
     public Uri getLogoUri() {
         return logoUri;
     }
@@ -133,5 +122,21 @@ public class Restaurant implements Serializable {
 
     public void setProfileImageUri(Uri profileImageUri) {
         this.profileImageUri = profileImageUri;
+    }
+
+    public int getMinAmountToDeliver() {
+        return minAmountToDeliver;
+    }
+
+    public void setMinAmountToDeliver(int minAmountToDeliver) {
+        this.minAmountToDeliver = minAmountToDeliver;
+    }
+
+    public boolean isKosher() {
+        return kosher;
+    }
+
+    public void setKosher(boolean kosher) {
+        this.kosher = kosher;
     }
 }
