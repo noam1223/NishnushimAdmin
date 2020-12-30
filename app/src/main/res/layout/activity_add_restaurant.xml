@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRestaurantActivity">
+
+
+    <TextView
+        android:id="@+id/head_line_add_restaurant_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הוסף מסעדה"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textColor="#000000"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head_line_add_restaurant_activity"
+        android:layout_marginBottom="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/restaurant_name_edit_text_add_restaurant_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="שם המסעדה"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/city_restaurant_name_edit_text_add_restaurant_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="עיר"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/street_restaurant_name_edit_text_add_restaurant_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="רחוב"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/number_of_street_restaurant_name_edit_text_add_restaurant_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="מספר"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/open_hour_line_text_view_add_restaurant_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="הכנס שעות פתיחה: "
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="12dp"/>
+
+
+            <Button
+                android:id="@+id/from_hour_open_hour_btn_add_restaurant_activity"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/open_hour_line_text_view_add_restaurant_activity"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:backgroundTint="#ffffff"
+                android:text="משעה"
+                android:textColor="#000000"/>
+
+
+            <Button
+                android:id="@+id/to_hour_close_hour_btn_add_restaurant_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/from_hour_open_hour_btn_add_restaurant_activity"
+                android:layout_marginRight="24dp"
+                android:backgroundTint="#ffffff"
+                android:text="עד שעה"
+                android:textColor="#000000"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="שים לב: הפורמט להכנסת השעה הינה בפורמט של 24 שעות"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="12sp"/>
+
+
+        <EditText
+            android:id="@+id/cost_of_delivery_add_restaurant_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="עלות משלוח"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/time_of_delivery_add_restaurant_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="זמן משלוח"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="יש לשים מספר בפורמט דקות (אם משלוח שעה וחצי יש לשים 90)"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#000000"/>
+
+
+        <EditText
+            android:id="@+id/phone_number_restaurant_add_restaurant_activity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:hint="מספר טלפון"
+            android:layout_gravity="center"
+            android:inputType="phone"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_restaurant_btn_add_restaurant_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="הוסף מסעדה"/>
+
+
+
+
+</RelativeLayout>

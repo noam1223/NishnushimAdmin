@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantProfileActivity">
+
+
+    <ImageButton
+        android:id="@+id/back_btn_restaurant_profile_activity"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        android:rotation="180"
+        android:layout_marginRight="12dp"
+        android:backgroundTint="#000000"/>
+
+
+
+    <TextView
+        android:id="@+id/head_line_text_view_restaurant_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="שם המסעדה"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="right">
+
+
+    <TextView
+        android:id="@+id/full_address_restaurant_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:text="כתובת: "
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/open_hours_restaurant_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:text="שעות פתיחה: "
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"/>
+
+
+
+    <TextView
+        android:id="@+id/time_delivery_restaurant_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:text="זמן משלוח: "
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"/>
+
+
+
+    <TextView
+        android:id="@+id/amount_delivery_restaurant_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:text="עלות משלוח: "
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"/>
+
+
+    <TextView
+        android:id="@+id/phone_number_restaurant_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:text="מספר טלפון: "
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"/>
+
+
+    <Button
+        android:id="@+id/menu_btn_restaurant_profile_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="תפריט"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"/>
+
+
+    <Button
+        android:id="@+id/edit_profile_restaurant_btn_restaurant_profile_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ערוך פרופיל"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
