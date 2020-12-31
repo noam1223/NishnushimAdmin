@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layoutDirection="rtl">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="רשימת אזורי חלוקה"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+
+
+
+    <ListView
+        android:id="@+id/list_view_area_for_delivery_list_of_area_pop_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:divider="#000000"
+        android:dividerHeight="1dp" />
+
+
+    <Button
+        android:id="@+id/exit_list_of_area_for_delivery_pop_up_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="צא"
+        android:layout_marginTop="18dp"/>
+
+
+
+</LinearLayout>

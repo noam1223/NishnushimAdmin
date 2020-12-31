@@ -27,14 +27,13 @@
         android:layout_below="@+id/head_line_add_restaurant_activity"
         android:layout_marginTop="18dp"
         android:layout_marginBottom="12dp"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:fitsSystemWindows="true">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="24dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -117,6 +116,7 @@
                 android:gravity="center"
                 android:hint="זמן משלוח" />
 
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -168,7 +168,7 @@
 
 
             <RadioGroup
-                android:id="@+id/radio_group_kosher_open_hours_pop_up_window"
+                android:id="@+id/radio_group_kosher_add_restaurant_activity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -191,13 +191,69 @@
 
 
 
+            <RadioGroup
+                android:id="@+id/radio_group_discount_price_add_restaurant_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="36dp"
+                    android:text="תומך בהנחה" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="לא תומך בהנחה" />
+
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:weightSum="2"
+                android:gravity="center">
+
+
+                <Spinner
+                    android:id="@+id/classification_spinner_add_restaurant_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:id="@+id/add_chosen_classification_btn_add_restaurant_activtiy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="הוסף סיווג"
+                    android:layout_weight="1"
+                    android:layout_marginRight="24dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
             <ImageView
                 android:id="@+id/logo_image_view_add_restaurant_activity"
                 android:layout_width="87dp"
                 android:layout_height="67dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:onClick="takePic"/>
+                android:onClick="takePic" />
 
 
 

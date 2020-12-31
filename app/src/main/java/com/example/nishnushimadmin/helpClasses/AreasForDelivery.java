@@ -1,24 +1,23 @@
 package com.example.nishnushimadmin.helpClasses;
 
 import java.io.Serializable;
-import java.util.List;
 
-public class AreasForDeliveries implements Serializable {
+public class AreasForDelivery implements Serializable {
 
     String areaName;
     int deliveryCost;
-    int minToOrder;
+    int minToDeliver;
     int timeOfDelivery;
 
 
-    public AreasForDeliveries() {
+    public AreasForDelivery() {
     }
 
 
-    public AreasForDeliveries(String areaName, int deliveryCost, int minToOrder, int timeOfDelivery) {
+    public AreasForDelivery(String areaName, int deliveryCost, int minToOrder, int timeOfDelivery) {
         this.areaName = areaName;
         this.deliveryCost = deliveryCost;
-        this.minToOrder = minToOrder;
+        this.minToDeliver = minToOrder;
         this.timeOfDelivery = timeOfDelivery;
     }
 
@@ -39,12 +38,12 @@ public class AreasForDeliveries implements Serializable {
         this.deliveryCost = deliveryCost;
     }
 
-    public int getMinToOrder() {
-        return minToOrder;
+    public int getMinToDeliver() {
+        return minToDeliver;
     }
 
-    public void setMinToOrder(int minToOrder) {
-        this.minToOrder = minToOrder;
+    public void setMinToDeliver(int minToDeliver) {
+        this.minToDeliver = minToDeliver;
     }
 
     public int getTimeOfDelivery() {

@@ -10,15 +10,16 @@ public class Restaurant implements Serializable {
 
     String name;
     MyAddress myAddress;
-    List<AreasForDeliveries> areasForDeliveries;
+    List<AreasForDelivery> areasForDeliveries;
     String phoneNumber;
     List<String> openHour, closeHour;
     String dateOfAdd;
     String deliveryTime;
     Uri logoUri;
     Uri profileImageUri;
-    int minAmountToDeliver;
-    boolean kosher;
+    List<CreditsRestaurant> creditsRestaurants = new ArrayList<>();
+    boolean kosher, discount;
+    List<Integer> classificationList = new ArrayList<>();
 
 
     public Restaurant() {
@@ -26,8 +27,7 @@ public class Restaurant implements Serializable {
     }
 
 
-
-    public Restaurant(String name, MyAddress myAddress, List<AreasForDeliveries> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, String deliveryTime,  Uri logoUri, Uri profileImageUri, int minAmountToDeliver, boolean kosher) {
+    public Restaurant(String name, MyAddress myAddress, List<AreasForDelivery> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, String deliveryTime, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList) {
         this.name = name;
         this.myAddress = myAddress;
         this.areasForDeliveries = areasForDeliveries;
@@ -38,10 +38,10 @@ public class Restaurant implements Serializable {
         this.deliveryTime = deliveryTime;
         this.logoUri = logoUri;
         this.profileImageUri = profileImageUri;
-        this.minAmountToDeliver = minAmountToDeliver;
         this.kosher = kosher;
+        this.discount = discount;
+        this.classificationList = classificationList;
     }
-
 
 
     public String getName() {
@@ -60,11 +60,11 @@ public class Restaurant implements Serializable {
         this.myAddress = myAddress;
     }
 
-    public List<AreasForDeliveries> getAreasForDeliveries() {
+    public List<AreasForDelivery> getAreasForDeliveries() {
         return areasForDeliveries;
     }
 
-    public void setAreasForDeliveries(List<AreasForDeliveries> areasForDeliveries) {
+    public void setAreasForDeliveries(List<AreasForDelivery> areasForDeliveries) {
         this.areasForDeliveries = areasForDeliveries;
     }
 
@@ -124,12 +124,12 @@ public class Restaurant implements Serializable {
         this.profileImageUri = profileImageUri;
     }
 
-    public int getMinAmountToDeliver() {
-        return minAmountToDeliver;
+    public List<CreditsRestaurant> getCreditsRestaurants() {
+        return creditsRestaurants;
     }
 
-    public void setMinAmountToDeliver(int minAmountToDeliver) {
-        this.minAmountToDeliver = minAmountToDeliver;
+    public void setCreditsRestaurants(List<CreditsRestaurant> creditsRestaurants) {
+        this.creditsRestaurants = creditsRestaurants;
     }
 
     public boolean isKosher() {
@@ -138,5 +138,21 @@ public class Restaurant implements Serializable {
 
     public void setKosher(boolean kosher) {
         this.kosher = kosher;
+    }
+
+    public boolean isDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(boolean discount) {
+        this.discount = discount;
+    }
+
+    public List<Integer> getClassificationList() {
+        return classificationList;
+    }
+
+    public void setClassificationList(List<Integer> classificationList) {
+        this.classificationList = classificationList;
     }
 }

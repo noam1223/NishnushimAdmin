@@ -42,7 +42,6 @@ public class RestaurantProfileActivity extends AppCompatActivity {
             restaurantNameHeadLineTextView.setText(restaurant.getName());
             addressRestaurantTextView.setText(restaurant.getMyAddress().getCityName() + "," + restaurant.getMyAddress().getStreetName() + " " + restaurant.getMyAddress().getHouseNumber());
             deliveryTimeTextView.setText(restaurant.getDeliveryTime());
-            amountOfDeliveryTextView.setText(String.valueOf(restaurant.getMinAmountToDeliver()));
             phoneNumberRestaurantTextView.setText(restaurant.getPhoneNumber());
 
         }
