@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="18dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/add_dish_btn_classification_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="הוסף מנה" />
+
+
+    <TextView
+        android:id="@+id/title_text_view_classification_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center_vertical"
+        android:paddingRight="19dp"
+        android:text="תת כותרת"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dish_recycler_view_classification_menu_dish_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

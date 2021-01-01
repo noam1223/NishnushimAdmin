@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NishnushimAdmin">
-        <activity android:name=".RestaurantProfileActivity"></activity>
+        <activity android:name=".AddMenuActivity"></activity>
+        <activity android:name=".RestaurantProfileActivity" />
         <activity android:name=".AddRestaurantActivity" />
         <activity android:name=".RestaurantsListActivity" />
         <activity android:name=".ChooserActivity" />

@@ -349,6 +349,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
                                             if (task.isSuccessful()){
                                                 Toast.makeText(AddRestaurantActivity.this, "המסעדה נוספה בהצלחה!", Toast.LENGTH_SHORT).show();
                                                 finish();
+
                                             }
 
 
