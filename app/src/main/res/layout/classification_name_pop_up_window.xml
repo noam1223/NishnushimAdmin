@@ -6,7 +6,7 @@
     android:layout_height="150dp"
     android:layoutDirection="rtl"
     android:layout_gravity="center"
-    android:paddingLeft="16dp">
+    android:padding="16dp">
 
 
     <EditText

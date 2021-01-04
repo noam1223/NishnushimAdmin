@@ -43,6 +43,16 @@
         android:layout_marginTop="24dp"/>
 
 
+    <Button
+        android:id="@+id/add_menu_to_restaurant_btn_add_menu_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="12dp"
+        android:text="הוסף תפריט"/>
+
 
 
 

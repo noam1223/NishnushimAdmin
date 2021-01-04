@@ -14,20 +14,22 @@ public class Restaurant implements Serializable {
     String phoneNumber;
     List<String> openHour, closeHour;
     String dateOfAdd;
+    
+    //TODO: DELETE DELIVERY TIME BECAUSE I NEED TO TAKE FROM LIST OF AREA FOR DELIVERIES
     String deliveryTime;
     Uri logoUri;
     Uri profileImageUri;
     List<CreditsRestaurant> creditsRestaurants = new ArrayList<>();
     boolean kosher, discount;
     List<Integer> classificationList = new ArrayList<>();
-
+    Menu menu;
 
     public Restaurant() {
 
     }
 
 
-    public Restaurant(String name, MyAddress myAddress, List<AreasForDelivery> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, String deliveryTime, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList) {
+    public Restaurant(String name, MyAddress myAddress, List<AreasForDelivery> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, String deliveryTime, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu) {
         this.name = name;
         this.myAddress = myAddress;
         this.areasForDeliveries = areasForDeliveries;
@@ -41,6 +43,7 @@ public class Restaurant implements Serializable {
         this.kosher = kosher;
         this.discount = discount;
         this.classificationList = classificationList;
+        this.menu = menu;
     }
 
 
@@ -154,5 +157,13 @@ public class Restaurant implements Serializable {
 
     public void setClassificationList(List<Integer> classificationList) {
         this.classificationList = classificationList;
+    }
+
+    public Menu getMenu() {
+        return menu;
+    }
+
+    public void setMenu(Menu menu) {
+        this.menu = menu;
     }
 }

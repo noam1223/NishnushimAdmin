@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="18dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="הוסף מנה"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/dish_name_edit_text_dish_details_pop_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="24dp"
+        android:hint="שם המנה"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/dish_details_edit_text_dish_details_pop_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:hint="פירוט המנה (יש לשים לב שהפירוט יוצג כפי שרשום)"
+        android:textAlignment="center" />
+
+
+    <EditText
+        android:id="@+id/dish_price_edit_text_dish_details_pop_up_window"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="עלות המנה"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/dish_picture_btn_dish_details_pop_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="תמונה המנה"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/add_dish_btn_dish_details_pop_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="הוסף מונה" />
+
+
+</LinearLayout>

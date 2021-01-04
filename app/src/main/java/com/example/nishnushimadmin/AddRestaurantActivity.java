@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import com.example.nishnushimadmin.adapters.AreaForDeliveryAdapter;
 import com.example.nishnushimadmin.helpClasses.AreasForDelivery;
+import com.example.nishnushimadmin.helpClasses.Menu;
 import com.example.nishnushimadmin.helpClasses.MyAddress;
 import com.example.nishnushimadmin.helpClasses.Restaurant;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -57,7 +58,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
     Uri logoImageUri, profileImageUri;
     boolean fromOrTo = false; // false - from , true - to
 
-    String[] classificationArray = {"פיצה", "המבורגר", "בשר", "סושי", "אסיאתי", "סלט","קינוח","איטלקי","חומוס","סנדוויץ","מקסיקני","ג׳חנון/בורקסים","דגים","כשר","ים תיכוני","ארוחות בוקר","פירות ים","מרק","יפני","נודלס"};
+    String[] classificationArray = {"פיצה", "המבורגר", "בשר", "סושי", "אסיאתי", "סלט", "קינוח", "איטלקי", "חומוס", "סנדוויץ", "מקסיקני", "ג׳חנון/בורקסים", "דגים", "כשר", "ים תיכוני", "ארוחות בוקר", "פירות ים", "מרק", "יפני", "נודלס"};
 
     FirebaseFirestore db;
 
@@ -83,11 +84,16 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
         classificationAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerClassification.setAdapter(classificationAdapter);
 
-        spinnerClassification.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinnerClassification.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                 classificationHandleList.add(position);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
@@ -98,7 +104,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (kosherRadioGroup.getCheckedRadioButtonId() != -1){
+                if (kosherRadioGroup.getCheckedRadioButtonId() != -1) {
 
                     RadioButton radioButton = findViewById(kosherRadioGroup.getCheckedRadioButtonId());
                     isKosherString = radioButton.getText().toString();
@@ -114,7 +120,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                if (discountRadioGroup.getCheckedRadioButtonId() != -1){
+                if (discountRadioGroup.getCheckedRadioButtonId() != -1) {
 
                     RadioButton radioButton = findViewById(discountRadioGroup.getCheckedRadioButtonId());
                     discountString = radioButton.getText().toString();
@@ -139,11 +145,8 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
         addClassificationBtn.setOnClickListener(this);
 
 
-
         db = FirebaseFirestore.getInstance();
     }
-
-
 
 
     @Override
@@ -152,7 +155,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
         int id = v.getId();
 
 
-        if (id == R.id.open_set_hours_dialog_add_restaurant_activity){
+        if (id == R.id.open_set_hours_dialog_add_restaurant_activity) {
 
 
             View popUpView = getLayoutInflater().inflate(R.layout.open_hours_dialog_pop_up_window, null);
@@ -162,13 +165,13 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
 
 
             Button finishFullFillPopUpBtn = popUpView.findViewById(R.id.finish_btn_open_hours_dialog_pop_up_window);
-            EditText[] rishonEditTextArray = { (EditText) popUpView.findViewById(R.id.rishon_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.rishon_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.rishon_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.rishon_minute_of_close_hour_edit_text_open_hour_dialog) };
-            EditText[] sheniEditTextArray = { (EditText) popUpView.findViewById(R.id.sheni_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.sheni_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.sheni_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.sheni_minute_of_close_hour_edit_text_open_hour_dialog) };
-            EditText[] shlishiEditTextArray = { (EditText) popUpView.findViewById(R.id.shlishi_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shlishi_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shlishi_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shlishi_minute_of_close_hour_edit_text_open_hour_dialog) };
-            EditText[] reveiEditTextArray = { (EditText) popUpView.findViewById(R.id.revei_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.revei_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.revei_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.revei_minute_of_close_hour_edit_text_open_hour_dialog) };
-            EditText[] hamishiEditTextArray = { (EditText) popUpView.findViewById(R.id.hamishi_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.hamishi_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.hamishi_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.hamishi_minute_of_close_hour_edit_text_open_hour_dialog) };
-            EditText[] shishiEditTextArray = { (EditText) popUpView.findViewById(R.id.shishi_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shishi_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shishi_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shishi_minute_of_close_hour_edit_text_open_hour_dialog) };
-            EditText[] shabatEditTextArray = { (EditText) popUpView.findViewById(R.id.shabat_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shabat_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shabat_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shabat_minute_of_close_hour_edit_text_open_hour_dialog) };
+            EditText[] rishonEditTextArray = {(EditText) popUpView.findViewById(R.id.rishon_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.rishon_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.rishon_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.rishon_minute_of_close_hour_edit_text_open_hour_dialog)};
+            EditText[] sheniEditTextArray = {(EditText) popUpView.findViewById(R.id.sheni_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.sheni_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.sheni_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.sheni_minute_of_close_hour_edit_text_open_hour_dialog)};
+            EditText[] shlishiEditTextArray = {(EditText) popUpView.findViewById(R.id.shlishi_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shlishi_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shlishi_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shlishi_minute_of_close_hour_edit_text_open_hour_dialog)};
+            EditText[] reveiEditTextArray = {(EditText) popUpView.findViewById(R.id.revei_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.revei_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.revei_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.revei_minute_of_close_hour_edit_text_open_hour_dialog)};
+            EditText[] hamishiEditTextArray = {(EditText) popUpView.findViewById(R.id.hamishi_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.hamishi_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.hamishi_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.hamishi_minute_of_close_hour_edit_text_open_hour_dialog)};
+            EditText[] shishiEditTextArray = {(EditText) popUpView.findViewById(R.id.shishi_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shishi_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shishi_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shishi_minute_of_close_hour_edit_text_open_hour_dialog)};
+            EditText[] shabatEditTextArray = {(EditText) popUpView.findViewById(R.id.shabat_hour_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shabat_minute_of_open_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shabat_hour_of_close_hour_edit_text_open_hour_dialog), popUpView.findViewById(R.id.shabat_minute_of_close_hour_edit_text_open_hour_dialog)};
 
 
             List<EditText[]> editTexts = new ArrayList<>();
@@ -188,7 +191,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
                     for (int i = 0; i < editTexts.size(); i++) {
 
                         if (!editTexts.get(i)[0].getText().toString().isEmpty() && !editTexts.get(i)[1].getText().toString().isEmpty()
-                                && !editTexts.get(i)[2].getText().toString().isEmpty() && !editTexts.get(i)[3].getText().toString().isEmpty()){
+                                && !editTexts.get(i)[2].getText().toString().isEmpty() && !editTexts.get(i)[3].getText().toString().isEmpty()) {
 
                             openHoursList.add(editTexts.get(i)[0].getText().toString() + ":" + editTexts.get(i)[1].getText().toString());
                             closeHoursList.add(editTexts.get(i)[2].getText().toString() + ":" + editTexts.get(i)[3].getText().toString());
@@ -210,7 +213,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
             hoursDialog.getWindow().setAttributes(lp);
 
 
-        } else if (id == R.id.watch_area_for_delivery_list_add_restaurant_activity){
+        } else if (id == R.id.watch_area_for_delivery_list_add_restaurant_activity) {
 
             if (!areasForDeliveries.isEmpty()) {
 
@@ -242,9 +245,9 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
                 lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
                 areaToDeliverListDialog.getWindow().setAttributes(lp);
 
-            }else Toast.makeText(this, "רשימת אזורי החלוקה הינה ריקה", Toast.LENGTH_SHORT).show();
+            } else Toast.makeText(this, "רשימת אזורי החלוקה הינה ריקה", Toast.LENGTH_SHORT).show();
 
-        }else if (id == R.id.add_area_for_delivery_add_restaurant_activity){
+        } else if (id == R.id.add_area_for_delivery_add_restaurant_activity) {
 
 
             View popUpView = getLayoutInflater().inflate(R.layout.add_area_for_delivery_pop_up_window, null);
@@ -270,7 +273,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
 
 
                     if (!areaName.isEmpty() && !deliveryCost.isEmpty()
-                            && !minToDeliver.isEmpty() && !timeOfDelivery.isEmpty()){
+                            && !minToDeliver.isEmpty() && !timeOfDelivery.isEmpty()) {
                         areasForDeliveries.add(new AreasForDelivery(areaName, Integer.parseInt(deliveryCost), Integer.parseInt(minToDeliver), Integer.parseInt(timeOfDelivery)));
                         areaDialog.dismiss();
                     }
@@ -285,7 +288,6 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
             lp.width = WindowManager.LayoutParams.MATCH_PARENT;
             lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
             areaDialog.getWindow().setAttributes(lp);
-
 
 
         } else if (id == R.id.add_restaurant_btn_add_restaurant_activity) {
@@ -315,72 +317,70 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
                     if (!areasForDeliveries.isEmpty() && !isKosherString.isEmpty() && !discountString.isEmpty() && !classificationHandleList.isEmpty()) {
 
                         if (isKosherString.equals("כשר"))
-                                isKosher = true;
+                            isKosher = true;
 
                         if (discountString.equals("תומך בהנחה"))
                             isDiscount = true;
 
 
-                            MyAddress myAddress = new MyAddress(city, street, streetNumber);
+                        MyAddress myAddress = new MyAddress(city, street, streetNumber);
 
-                            Geocoder geocoder = new Geocoder(getApplicationContext());
-                            String address = "ישראל, " + myAddress.getCityName() + "," +
-                                    myAddress.getStreetName() + " " + myAddress.getHouseNumber();
+                        Geocoder geocoder = new Geocoder(getApplicationContext());
+                        String address = "ישראל, " + myAddress.getCityName() + "," +
+                                myAddress.getStreetName() + " " + myAddress.getHouseNumber();
 
-                            try {
-                                List<Address> addresses = geocoder.getFromLocationName(address, 1);
+                        try {
+                            List<Address> addresses = geocoder.getFromLocationName(address, 1);
 
-                                if (addresses.size() > 0) {
-
-
-                                    myAddress.setLatitude(addresses.get(0).getLatitude());
-                                    myAddress.setLongitude(addresses.get(0).getLongitude());
+                            if (addresses.size() > 0) {
 
 
-                                    Date todayDate = new Date();
-                                    String dateOfAddRestaurant = new SimpleDateFormat("dd/MM/yyyy").format(todayDate);
+                                myAddress.setLatitude(addresses.get(0).getLatitude());
+                                myAddress.setLongitude(addresses.get(0).getLongitude());
 
 
-                                    Restaurant restaurant = new Restaurant(name, myAddress, areasForDeliveries, phone, openHoursList, closeHoursList, dateOfAddRestaurant, deliveryTime, logoImageUri, profileImageUri, isKosher, isDiscount, classificationHandleList);
-                                    db.collection(getResources().getString(R.string.RESTAURANTS_PATH)).add(restaurant).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<DocumentReference> task) {
-
-                                            if (task.isSuccessful()){
-                                                Toast.makeText(AddRestaurantActivity.this, "המסעדה נוספה בהצלחה!", Toast.LENGTH_SHORT).show();
-                                                finish();
-
-                                            }
+                                Date todayDate = new Date();
+                                String dateOfAddRestaurant = new SimpleDateFormat("dd/MM/yyyy").format(todayDate);
 
 
+                                Restaurant restaurant = new Restaurant(name, myAddress, areasForDeliveries, phone, openHoursList, closeHoursList, dateOfAddRestaurant, deliveryTime, logoImageUri, profileImageUri, isKosher, isDiscount, classificationHandleList, new Menu());
+                                db.collection(getResources().getString(R.string.RESTAURANTS_PATH)).add(restaurant).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<DocumentReference> task) {
+
+                                        if (task.isSuccessful()) {
+                                            Toast.makeText(AddRestaurantActivity.this, "המסעדה נוספה בהצלחה!", Toast.LENGTH_SHORT).show();
+                                            finish();
 
                                         }
-                                    }).addOnFailureListener(new OnFailureListener() {
-                                        @Override
-                                        public void onFailure(@NonNull Exception e) {
-                                            Toast.makeText(AddRestaurantActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                                        }
-                                    });
-                                } else Toast.makeText(this, "לא נמצאה כתובת זו אנא נסה שוב", Toast.LENGTH_SHORT).show();
 
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                                Toast.makeText(this, "ERROR: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                    } else Toast.makeText(this, "אנא הוסף איזורי שליחה או/ו 2 תמונות למסעדה", Toast.LENGTH_SHORT).show();
-                } else Toast.makeText(this, "חובה להכניס 7 שעות פתיחה ושעות סגירה", Toast.LENGTH_SHORT).show();
 
-            } else Toast.makeText(this, "יש צורך למלא את הפרטים שבתבניות", Toast.LENGTH_SHORT).show();
+                                    }
+                                }).addOnFailureListener(new OnFailureListener() {
+                                    @Override
+                                    public void onFailure(@NonNull Exception e) {
+                                        Toast.makeText(AddRestaurantActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                            } else
+                                Toast.makeText(this, "לא נמצאה כתובת זו אנא נסה שוב", Toast.LENGTH_SHORT).show();
+
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                            Toast.makeText(this, "ERROR: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    } else
+                        Toast.makeText(this, "אנא הוסף איזורי שליחה או/ו 2 תמונות למסעדה", Toast.LENGTH_SHORT).show();
+                } else
+                    Toast.makeText(this, "חובה להכניס 7 שעות פתיחה ושעות סגירה", Toast.LENGTH_SHORT).show();
+
+            } else
+                Toast.makeText(this, "יש צורך למלא את הפרטים שבתבניות", Toast.LENGTH_SHORT).show();
         }
     }
 
 
-
-
     public void takePic(View view) {
-
-
-
 
 
     }

@@ -21,12 +21,14 @@ public class RestaurantsAdapter extends RecyclerView.Adapter<RestaurantsAdapter.
 
 
     Context context;
-    List<Restaurant> restaurant = new ArrayList<>();
+    List<Restaurant> restaurant;
+    List<String> keys;
 
 
-    public RestaurantsAdapter(Context context, List<Restaurant> restaurant) {
+    public RestaurantsAdapter(Context context, List<Restaurant> restaurant, List<String> keys) {
         this.context = context;
         this.restaurant = restaurant;
+        this.keys = keys;
     }
 
 
@@ -51,6 +53,7 @@ public class RestaurantsAdapter extends RecyclerView.Adapter<RestaurantsAdapter.
 
                 Intent intent = new Intent(context, RestaurantProfileActivity.class);
                 intent.putExtra("restaurant", restaurant.get(holder.getAdapterPosition()));
+                intent.putExtra("key", keys.get(position));
                 context.startActivity(intent);
 
             }
