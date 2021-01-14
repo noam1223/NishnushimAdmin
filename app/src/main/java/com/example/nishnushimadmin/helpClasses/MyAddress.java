@@ -9,8 +9,16 @@ public class MyAddress implements Serializable {
     String streetName;
     String houseNumber;
 
+    //ADDED
+    String floor;
+    String entry;
+    String classificationAddress;
+
     double longitude;
     double latitude;
+
+    //ADDED
+    boolean isChosen = false;
 
     public MyAddress() {
     }
@@ -62,5 +70,43 @@ public class MyAddress implements Serializable {
 
     public void setLatitude(double latitude) {
         this.latitude = latitude;
+    }
+
+    public boolean isChosen() {
+        return isChosen;
+    }
+
+    public void setChosen(boolean chosen) {
+        isChosen = chosen;
+    }
+
+    public String fullMyAddress(){
+
+        return cityName + ", " + streetName + " " + houseNumber;
+
+    }
+
+    public String getFloor() {
+        return floor;
+    }
+
+    public void setFloor(String floor) {
+        this.floor = floor;
+    }
+
+    public String getEntry() {
+        return entry;
+    }
+
+    public void setEntry(String entry) {
+        this.entry = entry;
+    }
+
+    public String getClassificationAddress() {
+        return classificationAddress;
+    }
+
+    public void setClassificationAddress(String classificationAddress) {
+        this.classificationAddress = classificationAddress;
     }
 }

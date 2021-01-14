@@ -43,7 +43,7 @@ import java.util.List;
 
 public class AddRestaurantActivity extends AppCompatActivity implements View.OnClickListener {
 
-    EditText restaurantNameEditText, cityEditText, streetEditText, numberStreetEditText, deliveryCostEditText, timeDeliveryEditText, phoneNumberEditText;
+    EditText restaurantNameEditText, cityEditText, streetEditText, numberStreetEditText, deliveryCostEditText, phoneNumberEditText;
     Button addRestaurantBtn, hoursForRestaurantBtn, watchAreasForDeliveryBtn, setAreasForDeliveryBtn, addClassificationBtn;
     ImageView logoImageView, profileImageView;
     RadioGroup kosherRadioGroup, discountRadioGroup;
@@ -67,13 +67,11 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_restaurant);
 
-
         restaurantNameEditText = findViewById(R.id.restaurant_name_edit_text_add_restaurant_activity);
         cityEditText = findViewById(R.id.city_restaurant_name_edit_text_add_restaurant_activity);
         streetEditText = findViewById(R.id.street_restaurant_name_edit_text_add_restaurant_activity);
         numberStreetEditText = findViewById(R.id.number_of_street_restaurant_name_edit_text_add_restaurant_activity);
         deliveryCostEditText = findViewById(R.id.cost_of_delivery_add_restaurant_activity);
-        timeDeliveryEditText = findViewById(R.id.time_of_delivery_add_restaurant_activity);
         phoneNumberEditText = findViewById(R.id.phone_number_restaurant_add_restaurant_activity);
 
         logoImageView = findViewById(R.id.logo_image_view_add_restaurant_activity);
@@ -302,11 +300,10 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
             String streetNumber = numberStreetEditText.getText().toString();
 
             String deliveryCost = deliveryCostEditText.getText().toString();
-            String deliveryTime = timeDeliveryEditText.getText().toString();
 
 
             if (!name.isEmpty() && !city.isEmpty() && !street.isEmpty()
-                    && !streetNumber.isEmpty() && !deliveryCost.isEmpty() && !deliveryTime.isEmpty()
+                    && !streetNumber.isEmpty() && !deliveryCost.isEmpty()
                     && !phone.isEmpty()) {
 
 
@@ -343,7 +340,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
                                 String dateOfAddRestaurant = new SimpleDateFormat("dd/MM/yyyy").format(todayDate);
 
 
-                                Restaurant restaurant = new Restaurant(name, myAddress, areasForDeliveries, phone, openHoursList, closeHoursList, dateOfAddRestaurant, deliveryTime, logoImageUri, profileImageUri, isKosher, isDiscount, classificationHandleList, new Menu());
+                                Restaurant restaurant = new Restaurant(name, myAddress, areasForDeliveries, phone, openHoursList, closeHoursList, dateOfAddRestaurant, logoImageUri, profileImageUri, isKosher, isDiscount, classificationHandleList, new Menu());
                                 db.collection(getResources().getString(R.string.RESTAURANTS_PATH)).add(restaurant).addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
                                     @Override
                                     public void onComplete(@NonNull Task<DocumentReference> task) {

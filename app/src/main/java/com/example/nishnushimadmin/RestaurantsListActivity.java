@@ -74,9 +74,9 @@ public class RestaurantsListActivity extends AppCompatActivity {
                             restaurants.add(documentSnapshot.toObject(Restaurant.class));
 
                             keys.add(documentSnapshot.getId());
-                            restaurantAdapter.notifyDataSetChanged();
                         }
 
+                        restaurantAdapter.notifyDataSetChanged();
 
 
                     } else
@@ -105,7 +105,7 @@ public class RestaurantsListActivity extends AppCompatActivity {
     private void initializeClassificationRecyclerView() {
 
         restaurantRecyclerView.setHasFixedSize(false);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, true);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         restaurantRecyclerView.setLayoutManager(layoutManager);
         restaurantAdapter = new RestaurantsAdapter(this ,restaurants, keys);
         restaurantRecyclerView.setAdapter(restaurantAdapter);

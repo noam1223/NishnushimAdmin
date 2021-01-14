@@ -13,7 +13,7 @@ import com.example.nishnushimadmin.helpClasses.Restaurant;
 
 public class RestaurantProfileActivity extends AppCompatActivity {
 
-    TextView restaurantNameHeadLineTextView, addressRestaurantTextView, openHoursRestaurantTextView, deliveryTimeTextView, amountOfDeliveryTextView, phoneNumberRestaurantTextView;
+    TextView restaurantNameHeadLineTextView, addressRestaurantTextView, openHoursRestaurantTextView, amountOfDeliveryTextView, phoneNumberRestaurantTextView;
     ImageButton backImgBtn;
     Button addMenuBtn;
 
@@ -28,7 +28,6 @@ public class RestaurantProfileActivity extends AppCompatActivity {
         restaurantNameHeadLineTextView = findViewById(R.id.head_line_text_view_restaurant_profile_activity);
         addressRestaurantTextView = findViewById(R.id.full_address_restaurant_profile_activity);
         openHoursRestaurantTextView = findViewById(R.id.open_hours_restaurant_profile_activity);
-        deliveryTimeTextView = findViewById(R.id.time_delivery_restaurant_profile_activity);
         amountOfDeliveryTextView = findViewById(R.id.amount_delivery_restaurant_profile_activity);
         phoneNumberRestaurantTextView = findViewById(R.id.phone_number_restaurant_profile_activity);
         addMenuBtn = findViewById(R.id.menu_btn_restaurant_profile_activity);
@@ -65,7 +64,6 @@ public class RestaurantProfileActivity extends AppCompatActivity {
 
             restaurantNameHeadLineTextView.setText(restaurant.getName());
             addressRestaurantTextView.setText(restaurant.getMyAddress().getCityName() + "," + restaurant.getMyAddress().getStreetName() + " " + restaurant.getMyAddress().getHouseNumber());
-            deliveryTimeTextView.setText(restaurant.getDeliveryTime());
             phoneNumberRestaurantTextView.setText(restaurant.getPhoneNumber());
 
         } else finish();

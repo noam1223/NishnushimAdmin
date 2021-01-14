@@ -107,16 +107,6 @@
                 android:hint="עלות משלוח" />
 
 
-            <EditText
-                android:id="@+id/time_of_delivery_add_restaurant_activity"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="12dp"
-                android:gravity="center"
-                android:hint="זמן משלוח" />
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

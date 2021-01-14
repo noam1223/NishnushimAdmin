@@ -156,7 +156,7 @@ public class AddMenuActivity extends AppCompatActivity {
     private void initializeClassificationRecyclerView() {
 
         classificationRecyclerView.setHasFixedSize(false);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, true);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         classificationRecyclerView.setLayoutManager(layoutManager);
         classificationAdapter = new ClassificationMenuAdapter(this, restaurant.getMenu());
         classificationRecyclerView.setAdapter(classificationAdapter);

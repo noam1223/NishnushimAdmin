@@ -14,22 +14,26 @@ public class Restaurant implements Serializable {
     String phoneNumber;
     List<String> openHour, closeHour;
     String dateOfAdd;
-    
-    //TODO: DELETE DELIVERY TIME BECAUSE I NEED TO TAKE FROM LIST OF AREA FOR DELIVERIES
-    String deliveryTime;
+
     Uri logoUri;
     Uri profileImageUri;
-    List<CreditsRestaurant> creditsRestaurants = new ArrayList<>();
+    List<RecommendationRestaurant> recommendationRestaurants = new ArrayList<>();
     boolean kosher, discount;
     List<Integer> classificationList = new ArrayList<>();
     Menu menu;
+
+    //ADDED
+    float recommendationAvg = -1;
+    double distanceFromCurrentUser;
+
+    int creditAmount = 0;
 
     public Restaurant() {
 
     }
 
 
-    public Restaurant(String name, MyAddress myAddress, List<AreasForDelivery> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, String deliveryTime, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu) {
+    public Restaurant(String name, MyAddress myAddress, List<AreasForDelivery> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu) {
         this.name = name;
         this.myAddress = myAddress;
         this.areasForDeliveries = areasForDeliveries;
@@ -37,7 +41,6 @@ public class Restaurant implements Serializable {
         this.openHour = openHour;
         this.closeHour = closeHour;
         this.dateOfAdd = dateOfAdd;
-        this.deliveryTime = deliveryTime;
         this.logoUri = logoUri;
         this.profileImageUri = profileImageUri;
         this.kosher = kosher;
@@ -103,13 +106,6 @@ public class Restaurant implements Serializable {
         this.dateOfAdd = dateOfAdd;
     }
 
-    public String getDeliveryTime() {
-        return deliveryTime;
-    }
-
-    public void setDeliveryTime(String deliveryTime) {
-        this.deliveryTime = deliveryTime;
-    }
 
     public Uri getLogoUri() {
         return logoUri;
@@ -127,12 +123,12 @@ public class Restaurant implements Serializable {
         this.profileImageUri = profileImageUri;
     }
 
-    public List<CreditsRestaurant> getCreditsRestaurants() {
-        return creditsRestaurants;
+    public List<RecommendationRestaurant> getRecommendationRestaurants() {
+        return recommendationRestaurants;
     }
 
-    public void setCreditsRestaurants(List<CreditsRestaurant> creditsRestaurants) {
-        this.creditsRestaurants = creditsRestaurants;
+    public void setRecommendationRestaurants(List<RecommendationRestaurant> recommendationRestaurants) {
+        this.recommendationRestaurants = recommendationRestaurants;
     }
 
     public boolean isKosher() {
@@ -165,5 +161,42 @@ public class Restaurant implements Serializable {
 
     public void setMenu(Menu menu) {
         this.menu = menu;
+    }
+
+
+
+    public float getRecommendationAvg() {
+
+        if (recommendationAvg == -1) {
+
+            float avg = 0;
+
+            for (int i = 0; i < recommendationRestaurants.size(); i++) {
+
+                avg += recommendationRestaurants.get(i).getCreditStar();
+
+            }
+
+            recommendationAvg = (float) (avg/recommendationRestaurants.size());
+        }
+
+        return recommendationAvg;
+    }
+
+
+    public double getDistanceFromCurrentUser() {
+        return distanceFromCurrentUser;
+    }
+
+    public void setDistanceFromCurrentUser(double distanceFromCurrentUser) {
+        this.distanceFromCurrentUser = distanceFromCurrentUser;
+    }
+
+    public int getCreditAmount() {
+        return creditAmount;
+    }
+
+    public void setCreditAmount(int creditAmount) {
+        this.creditAmount = creditAmount;
     }
 }
