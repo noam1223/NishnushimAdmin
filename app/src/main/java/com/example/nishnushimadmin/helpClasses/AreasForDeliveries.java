@@ -2,7 +2,7 @@ package com.example.nishnushimadmin.helpClasses;
 
 import java.io.Serializable;
 
-public class AreasForDelivery implements Serializable {
+public class AreasForDeliveries implements Serializable {
 
     String areaName;
     int deliveryCost;
@@ -10,11 +10,11 @@ public class AreasForDelivery implements Serializable {
     int timeOfDelivery;
 
 
-    public AreasForDelivery() {
+    public AreasForDeliveries() {
     }
 
 
-    public AreasForDelivery(String areaName, int deliveryCost, int minToOrder, int timeOfDelivery) {
+    public AreasForDeliveries(String areaName, int deliveryCost, int minToOrder, int timeOfDelivery) {
         this.areaName = areaName;
         this.deliveryCost = deliveryCost;
         this.minToDeliver = minToOrder;

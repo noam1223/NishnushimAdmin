@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="באפשרותך לבחור סיווג ולאחר מכן לבחור כמות מנות או מנה אחת שהמשתמש יוכל להוסיף"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <Spinner
+        android:id="@+id/spinner_classification_dish_add_classification_change_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="center"/>
+
+
+
+    <EditText
+        android:id="@+id/amount_units_to_add_edit_text_add_classification_change_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="כמות שניתן לבחור (ללא עלות)"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_gravity="center"
+        android:inputType="number"/>
+
+
+
+
+</LinearLayout>

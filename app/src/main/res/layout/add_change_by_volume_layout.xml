@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/classification_name_auto_complete_add_change_by_volume_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="שם הסיווג"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+
+
+
+
+    <EditText
+        android:id="@+id/change_name_edit_text_add_change_by_volume_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="שם השינוי"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"/>
+
+
+
+
+
+        <EditText
+            android:id="@+id/cost_change_edit_text_add_change_by_volume_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="12dp"
+            android:hint="עלות ליחידה"
+            android:layout_gravity="center"/>
+
+
+
+
+
+        <EditText
+            android:id="@+id/units_change_edit_text_add_change_by_volume_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="12dp"
+            android:hint="יחידות (ק״ג, ניתן לא להכניס יחידה)"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center"/>
+
+
+
+
+    <Button
+        android:id="@+id/add_volume_change_btn_add_change_pop_up_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:text="הוסף"/>
+
+
+    <ListView
+        android:id="@+id/volume_changes_list_view_add_change_pop_up_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

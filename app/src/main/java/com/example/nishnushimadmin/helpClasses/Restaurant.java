@@ -8,12 +8,16 @@ import java.util.List;
 
 public class Restaurant implements Serializable {
 
+    String id;
     String name;
+    String restaurantUserName;
+    String restaurantUserPassword;
     MyAddress myAddress;
-    List<AreasForDelivery> areasForDeliveries;
+    List<AreasForDeliveries> AreasForDeliveries;
     String phoneNumber;
     List<String> openHour, closeHour;
     String dateOfAdd;
+
 
     Uri logoUri;
     Uri profileImageUri;
@@ -23,20 +27,40 @@ public class Restaurant implements Serializable {
     Menu menu;
 
     //ADDED
-    float recommendationAvg = -1;
+    float recommendationAvg = 0;
     double distanceFromCurrentUser;
 
     int creditAmount = 0;
 
     public Restaurant() {
-
     }
 
+    public Restaurant(String id, String name, String restaurantUserName, String restaurantUserPassword, MyAddress myAddress, List<AreasForDeliveries> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, List<RecommendationRestaurant> recommendationRestaurants, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu, float recommendationAvg, int creditAmount) {
+        this.id = id;
+        this.name = name;
+        this.restaurantUserName = restaurantUserName;
+        this.restaurantUserPassword = restaurantUserPassword;
+        this.myAddress = myAddress;
+        AreasForDeliveries = areasForDeliveries;
+        this.phoneNumber = phoneNumber;
+        this.openHour = openHour;
+        this.closeHour = closeHour;
+        this.dateOfAdd = dateOfAdd;
+        this.logoUri = logoUri;
+        this.profileImageUri = profileImageUri;
+        this.recommendationRestaurants = recommendationRestaurants;
+        this.kosher = kosher;
+        this.discount = discount;
+        this.classificationList = classificationList;
+        this.menu = menu;
+        this.recommendationAvg = recommendationAvg;
+        this.creditAmount = creditAmount;
+    }
 
-    public Restaurant(String name, MyAddress myAddress, List<AreasForDelivery> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu) {
+    public Restaurant(String name, MyAddress myAddress, List<AreasForDeliveries> AreasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu, String restaurantUserName, String restaurantUserPassword) {
         this.name = name;
         this.myAddress = myAddress;
-        this.areasForDeliveries = areasForDeliveries;
+        this.AreasForDeliveries = AreasForDeliveries;
         this.phoneNumber = phoneNumber;
         this.openHour = openHour;
         this.closeHour = closeHour;
@@ -47,6 +71,8 @@ public class Restaurant implements Serializable {
         this.discount = discount;
         this.classificationList = classificationList;
         this.menu = menu;
+        this.restaurantUserName = restaurantUserName;
+        this.restaurantUserPassword = restaurantUserPassword;
     }
 
 
@@ -66,12 +92,12 @@ public class Restaurant implements Serializable {
         this.myAddress = myAddress;
     }
 
-    public List<AreasForDelivery> getAreasForDeliveries() {
-        return areasForDeliveries;
+    public List<AreasForDeliveries> getAreasForDeliveries() {
+        return AreasForDeliveries;
     }
 
-    public void setAreasForDeliveries(List<AreasForDelivery> areasForDeliveries) {
-        this.areasForDeliveries = areasForDeliveries;
+    public void setAreasForDeliveries(List<AreasForDeliveries> areasForDeliveries) {
+        this.AreasForDeliveries = areasForDeliveries;
     }
 
     public String getPhoneNumber() {
@@ -198,5 +224,29 @@ public class Restaurant implements Serializable {
 
     public void setCreditAmount(int creditAmount) {
         this.creditAmount = creditAmount;
+    }
+
+    public String getRestaurantUserName() {
+        return restaurantUserName;
+    }
+
+    public void setRestaurantUserName(String restaurantUserName) {
+        this.restaurantUserName = restaurantUserName;
+    }
+
+    public String getRestaurantUserPassword() {
+        return restaurantUserPassword;
+    }
+
+    public void setRestaurantUserPassword(String restaurantUserPassword) {
+        this.restaurantUserPassword = restaurantUserPassword;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

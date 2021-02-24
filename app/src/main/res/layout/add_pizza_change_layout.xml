@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:weightSum="3"
+    android:padding="16dp">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        android:layout_weight="1">
+
+
+
+        <EditText
+            android:id="@+id/amount_of_free_edit_text_add_pizza_change_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="חינם (כמות)"
+            android:inputType="number"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+        <EditText
+            android:id="@+id/all_changes_cost_edit_text_add_pizza_change_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="עלות כלל התוספות "
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layoutDirection="rtl">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="תוספת ראשונה"/>
+
+
+
+            <EditText
+                android:id="@+id/first_change_cost_edit_text_add_pizza_change_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="סכום"
+                android:gravity="center"
+                android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="תוספת שנייה"/>
+
+
+
+                <EditText
+                    android:id="@+id/second_change_cost_edit_text_add_pizza_change_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="סכום"
+                    android:gravity="center"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="תוספת שלישית"/>
+
+
+
+                <EditText
+                    android:id="@+id/third_change_cost_edit_text_add_pizza_change_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="סכום"
+                    android:gravity="center"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/pizza_change_list_view_add_pizza_change_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="8dp"/>
+
+
+
+    <ListView
+        android:id="@+id/pizza_change_added_list_view_add_pizza_change_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+
+</LinearLayout>

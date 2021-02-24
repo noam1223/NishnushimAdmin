@@ -4,7 +4,9 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="18dp"
     android:layoutDirection="rtl"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/btn_bottom_line_selected"
+    android:padding="8dp">
 
 
     <Button
@@ -14,6 +16,16 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:text="הוסף מנה" />
+
+    <Button
+        android:id="@+id/add_classification_change_btn_classification_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="שינויים לסיווג"
+        android:layout_marginTop="12dp"/>
 
 
     <TextView

@@ -31,6 +31,17 @@ public class MyAddress implements Serializable {
 
     }
 
+    public MyAddress(String cityName, String streetName, String houseNumber, String floor, String entry, String classificationAddress, double longitude, double latitude, boolean isChosen) {
+        this.cityName = cityName;
+        this.streetName = streetName;
+        this.houseNumber = houseNumber;
+        this.floor = floor;
+        this.entry = entry;
+        this.classificationAddress = classificationAddress;
+        this.longitude = longitude;
+        this.latitude = latitude;
+        this.isChosen = isChosen;
+    }
 
     public String getCityName() {
         return cityName;
@@ -82,7 +93,15 @@ public class MyAddress implements Serializable {
 
     public String fullMyAddress(){
 
-        return cityName + ", " + streetName + " " + houseNumber;
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(cityName).append(", ");
+        stringBuilder.append(streetName).append(" ");
+
+        if (houseNumber != null){
+            stringBuilder.append(houseNumber);
+        }
+
+        return stringBuilder.toString();
 
     }
 

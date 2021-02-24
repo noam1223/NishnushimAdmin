@@ -23,4 +23,10 @@ public class Menu implements Serializable {
         this.classifications = classifications;
     }
 
+    @Override
+    public String toString() {
+        return "Menu{" +
+                "classifications=" + classifications.toString() +
+                '}';
+    }
 }

@@ -1,47 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="250dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layoutDirection="rtl"
-    android:gravity="center"
     android:layout_gravity="center"
-    android:padding="32dp">
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp"
+    android:gravity="center"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="18dp">
 
 
-
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/area_name_edit_text_add_area_pop_up_window"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="שם האיזור"/>
-
+        android:hint="שם האיזור" />
 
 
     <EditText
         android:id="@+id/delivery_cost_edit_text_add_area_pop_up_window"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="עלות משלוח"
-        android:layout_marginTop="18dp"/>
-
+        android:layout_marginTop="18dp"
+        android:hint="עלות משלוח" />
 
 
     <EditText
         android:id="@+id/min_to_deliver_edit_text_add_area_pop_up_window"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="מינימום הזמנה"
-        android:layout_marginTop="18dp"/>
+        android:layout_marginTop="18dp"
+        android:hint="מינימום הזמנה" />
 
 
-
-    <EditText
-        android:id="@+id/time_of_delivery_edit_text_add_area_pop_up_window"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="זמן משלוח"
-        android:layout_marginTop="18dp"/>
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Spinner
+            android:id="@+id/delivery_classification_spinner_add_area_pop_up_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+
+            <EditText
+                android:id="@+id/time_of_delivery_edit_text_add_area_pop_up_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="זמן משלוח"
+                android:gravity="center" />
+
+
+
+            <EditText
+                android:id="@+id/to_time_of_delivery_edit_text_add_area_pop_up_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:hint="זמן משלוח"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 
     <Button
@@ -49,7 +96,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="הוסף אזור"/>
+        android:layout_marginTop="18dp"
+        android:text="הוסף אזור" />
 
 
 </LinearLayout>

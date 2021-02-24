@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+    <Spinner
+        android:id="@+id/classification_style_change_add_classification_change_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/view_flipper_add_classification_change_pop_up_window"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl">
+
+
+                <include
+                    android:id="@+id/watch_existing_classification_include_change_pop_up"
+                    layout="@layout/watch_existing_classification_changes_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+
+                <include
+                    android:id="@+id/add_dish_change_by_dish_include_change_pop_up"
+                    layout="@layout/add_dish_change_by_dish_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+
+                <include
+                    android:id="@+id/_add_classification_cahnge_include_change_pop_up"
+                    layout="@layout/add_classification_change_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+
+                <include
+                    android:id="@+id/add_regular_change_include_change_pop_up"
+                    layout="@layout/add_change_pop_up_window"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+
+                <include
+                    android:id="@+id/add_change_by_volume_include_change_pop_up"
+                    layout="@layout/add_change_by_volume_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+
+                <include
+                    android:id="@+id/add_change_pizza_include_change_pop_up"
+                    layout="@layout/add_pizza_change_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+
+
+
+
+            </ViewFlipper>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/add_classification_btn_add_classification_change_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="שמור שינוי" />
+
+
+</LinearLayout>

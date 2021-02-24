@@ -11,18 +11,18 @@ import android.widget.TextView;
 import androidx.core.content.ContextCompat;
 
 import com.example.nishnushimadmin.R;
-import com.example.nishnushimadmin.helpClasses.AreasForDelivery;
+import com.example.nishnushimadmin.helpClasses.AreasForDeliveries;
 
 import java.util.List;
 
 public class AreaForDeliveryAdapter extends BaseAdapter {
 
     Context context;
-    List<AreasForDelivery> areasForDeliveries;
+    List<AreasForDeliveries> areasForDeliveries;
 
 
 
-    public AreaForDeliveryAdapter(Context context, List<AreasForDelivery> areasForDeliveries) {
+    public AreaForDeliveryAdapter(Context context, List<AreasForDeliveries> areasForDeliveries) {
         this.context = context;
         this.areasForDeliveries = areasForDeliveries;
     }
@@ -46,7 +46,7 @@ public class AreaForDeliveryAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view = LayoutInflater.from(context).inflate(R.layout.list_of_area_for_delivery_pop_up_window, null);
+        View view = LayoutInflater.from(context).inflate(R.layout.area_for_delivery_item, null);
 
         TextView areaNameTextView = view.findViewById(R.id.area_name_text_view_area_for_delivery_item);
         TextView deliveryCostTextView = view.findViewById(R.id.delivery_cost_text_view_area_for_delivery_item);

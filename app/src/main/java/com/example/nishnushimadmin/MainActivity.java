@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     if (password.equals(getResources().getString(R.string.passwordApp))){
 
                         startActivity(new Intent(MainActivity.this, ChooserActivity.class));
+//                        startActivity(new Intent(MainActivity.this, AddMenuActivity.class));
 
                     }
 
