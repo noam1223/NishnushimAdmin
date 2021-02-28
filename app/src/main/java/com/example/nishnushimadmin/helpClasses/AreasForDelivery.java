@@ -1,8 +1,11 @@
 package com.example.nishnushimadmin.helpClasses;
 
+import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
+
 import java.io.Serializable;
 
-public class AreasForDeliveries implements Serializable {
+//("areasForDeliveries")
+public class AreasForDelivery implements Serializable {
 
     String areaName;
     int deliveryCost;
@@ -10,11 +13,11 @@ public class AreasForDeliveries implements Serializable {
     int timeOfDelivery;
 
 
-    public AreasForDeliveries() {
+    public AreasForDelivery() {
     }
 
 
-    public AreasForDeliveries(String areaName, int deliveryCost, int minToOrder, int timeOfDelivery) {
+    public AreasForDelivery(String areaName, int deliveryCost, int minToOrder, int timeOfDelivery) {
         this.areaName = areaName;
         this.deliveryCost = deliveryCost;
         this.minToDeliver = minToOrder;

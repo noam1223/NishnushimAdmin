@@ -11,18 +11,18 @@ import android.widget.TextView;
 import androidx.core.content.ContextCompat;
 
 import com.example.nishnushimadmin.R;
-import com.example.nishnushimadmin.helpClasses.AreasForDeliveries;
+import com.example.nishnushimadmin.helpClasses.AreasForDelivery;
 
 import java.util.List;
 
 public class AreaForDeliveryAdapter extends BaseAdapter {
 
     Context context;
-    List<AreasForDeliveries> areasForDeliveries;
+    List<AreasForDelivery> areasForDeliveries;
 
 
 
-    public AreaForDeliveryAdapter(Context context, List<AreasForDeliveries> areasForDeliveries) {
+    public AreaForDeliveryAdapter(Context context, List<AreasForDelivery> areasForDeliveries) {
         this.context = context;
         this.areasForDeliveries = areasForDeliveries;
     }

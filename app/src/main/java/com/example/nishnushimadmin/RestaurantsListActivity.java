@@ -17,7 +17,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.nishnushimadmin.adapters.RestaurantsAdapter;
-import com.example.nishnushimadmin.helpClasses.AreasForDeliveries;
+import com.example.nishnushimadmin.helpClasses.AreasForDelivery;
 import com.example.nishnushimadmin.helpClasses.Classification;
 import com.example.nishnushimadmin.helpClasses.Dish;
 import com.example.nishnushimadmin.helpClasses.Menu;
@@ -159,7 +159,7 @@ public class RestaurantsListActivity extends AppCompatActivity {
 
                             MyAddress myAddress = new MyAddress(cityName, streetName, houseNumber, floor, entry, classificationAddress, longitude, latitude, true);
 
-                            List<AreasForDeliveries> areasForDeliveries = new ArrayList<>();
+                            List<AreasForDelivery> areasForDeliveries = new ArrayList<>();
                             JSONArray areasForDeliveryJsonArray = restaurantJsonObject.getJSONArray("areasForDeliveries");
 
                             for (int j = 0; j < areasForDeliveryJsonArray.length(); j++) {
@@ -169,7 +169,7 @@ public class RestaurantsListActivity extends AppCompatActivity {
                                 int minToDeliver = areaForDeliveryJsonObject.getInt("minToDeliver");
                                 int timeOfDelivery = areaForDeliveryJsonObject.getInt("timeOfDelivery");
 
-                                areasForDeliveries.add(new AreasForDeliveries(areaName, deliveryCost, minToDeliver, timeOfDelivery));
+                                areasForDeliveries.add(new AreasForDelivery(areaName, deliveryCost, minToDeliver, timeOfDelivery));
                             }
 
                             String phoneNumber = restaurantJsonObject.getString("phoneNumber");

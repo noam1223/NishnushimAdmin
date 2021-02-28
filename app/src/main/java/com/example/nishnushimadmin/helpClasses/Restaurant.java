@@ -13,7 +13,7 @@ public class Restaurant implements Serializable {
     String restaurantUserName;
     String restaurantUserPassword;
     MyAddress myAddress;
-    List<AreasForDeliveries> AreasForDeliveries;
+    List<AreasForDelivery> AreasForDelivery;
     String phoneNumber;
     List<String> openHour, closeHour;
     String dateOfAdd;
@@ -35,13 +35,13 @@ public class Restaurant implements Serializable {
     public Restaurant() {
     }
 
-    public Restaurant(String id, String name, String restaurantUserName, String restaurantUserPassword, MyAddress myAddress, List<AreasForDeliveries> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, List<RecommendationRestaurant> recommendationRestaurants, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu, float recommendationAvg, int creditAmount) {
+    public Restaurant(String id, String name, String restaurantUserName, String restaurantUserPassword, MyAddress myAddress, List<AreasForDelivery> areasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, List<RecommendationRestaurant> recommendationRestaurants, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu, float recommendationAvg, int creditAmount) {
         this.id = id;
         this.name = name;
         this.restaurantUserName = restaurantUserName;
         this.restaurantUserPassword = restaurantUserPassword;
         this.myAddress = myAddress;
-        AreasForDeliveries = areasForDeliveries;
+        AreasForDelivery = areasForDeliveries;
         this.phoneNumber = phoneNumber;
         this.openHour = openHour;
         this.closeHour = closeHour;
@@ -57,10 +57,10 @@ public class Restaurant implements Serializable {
         this.creditAmount = creditAmount;
     }
 
-    public Restaurant(String name, MyAddress myAddress, List<AreasForDeliveries> AreasForDeliveries, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu, String restaurantUserName, String restaurantUserPassword) {
+    public Restaurant(String name, MyAddress myAddress, List<AreasForDelivery> AreasForDelivery, String phoneNumber, List<String> openHour, List<String> closeHour, String dateOfAdd, Uri logoUri, Uri profileImageUri, boolean kosher, boolean discount, List<Integer> classificationList, Menu menu, String restaurantUserName, String restaurantUserPassword) {
         this.name = name;
         this.myAddress = myAddress;
-        this.AreasForDeliveries = AreasForDeliveries;
+        this.AreasForDelivery = AreasForDelivery;
         this.phoneNumber = phoneNumber;
         this.openHour = openHour;
         this.closeHour = closeHour;
@@ -92,12 +92,12 @@ public class Restaurant implements Serializable {
         this.myAddress = myAddress;
     }
 
-    public List<AreasForDeliveries> getAreasForDeliveries() {
-        return AreasForDeliveries;
+    public List<AreasForDelivery> getAreasForDelivery() {
+        return AreasForDelivery;
     }
 
-    public void setAreasForDeliveries(List<AreasForDeliveries> areasForDeliveries) {
-        this.AreasForDeliveries = areasForDeliveries;
+    public void setAreasForDelivery(List<AreasForDelivery> areasForDelivery) {
+        this.AreasForDelivery = areasForDelivery;
     }
 
     public String getPhoneNumber() {

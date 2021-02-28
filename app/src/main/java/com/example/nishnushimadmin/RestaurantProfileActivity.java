@@ -12,9 +12,11 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.nishnushimadmin.adapters.AreasForDeliveryAdapter;
+import com.example.nishnushimadmin.adapters.OpenCloseRestaurantHoursAdapter;
 import com.example.nishnushimadmin.helpClasses.Restaurant;
 
 public class RestaurantProfileActivity extends AppCompatActivity {
@@ -23,10 +25,11 @@ public class RestaurantProfileActivity extends AppCompatActivity {
     ImageButton backImgBtn;
     Button addMenuBtn, previewRestaurantBtn, editRestaurantProfileBtn;
 
-    LinearLayout areaOfDeliveryLinearLayout;
     TextView areaOfDeliveryTextView;
 
     Restaurant restaurant;
+
+    ListView areaForDeliveryListView, openCloseHoursListView;
 
     String[] daysOfWeek = {"יום ראשון", "יום שני", "יום שלישי", "יום רביעי", "יום חמישי", "יום שישי", "יום שבת"};
 
@@ -41,21 +44,11 @@ public class RestaurantProfileActivity extends AppCompatActivity {
         phoneNumberRestaurantTextView = findViewById(R.id.phone_number_restaurant_profile_activity);
         addMenuBtn = findViewById(R.id.menu_btn_restaurant_profile_activity);
         editRestaurantProfileBtn = findViewById(R.id.edit_profile_restaurant_btn_restaurant_profile_activity);
-        areaOfDeliveryTextView = findViewById(R.id.area_of_delivery_text_view_restaurant_profile_activity);
 
 
-        areaOfDeliveryLinearLayout = findViewById(R.id.linear_layout_area_of_delivery_restaurant_profile_activity);
         previewRestaurantBtn = findViewById(R.id.preview_restaurant_btn_restaurant_profile_activity);
-
-        TextView[] daysOpenCloseHourTextView =  {findViewById(R.id.day_one_open_close_hour_text_view_restaurant_profile_activity),
-                findViewById(R.id.day_two_open_close_hour_text_view_restaurant_profile_activity),
-                findViewById(R.id.day_three_open_close_hour_text_view_restaurant_profile_activity),
-                findViewById(R.id.day_four_open_close_hour_text_view_restaurant_profile_activity),
-                findViewById(R.id.day_five_open_close_hour_text_view_restaurant_profile_activity),
-                findViewById(R.id.day_six_open_close_hour_text_view_restaurant_profile_activity),
-                findViewById(R.id.day_seven_open_close_hour_text_view_restaurant_profile_activity)};
-
-
+        openCloseHoursListView = findViewById(R.id.open_close_hours_list_view_restaurant_profile_activity);
+        areaForDeliveryListView = findViewById(R.id.area_for_delivery_list_view_restaurant_profile_activity);
 
 
 
@@ -90,37 +83,8 @@ public class RestaurantProfileActivity extends AppCompatActivity {
             addressRestaurantTextView.setText(restaurant.getMyAddress().fullMyAddress());
             phoneNumberRestaurantTextView.setText(restaurant.getPhoneNumber());
 
-            StringBuilder stringBuilder = new StringBuilder();
-
-            for (int i = 0; i < daysOpenCloseHourTextView.length; i++) {
-
-                stringBuilder = new StringBuilder();
-                stringBuilder.append(daysOfWeek[i]).append(": ");
-                stringBuilder.append("פתוח ").append(restaurant.getOpenHour().get(i)).append(" - ");
-                stringBuilder.append("סגור ").append(restaurant.getCloseHour().get(i));
-                stringBuilder.append("\n");
-                daysOpenCloseHourTextView[i].setText(stringBuilder.toString());
-            }
-
-
-            stringBuilder = new StringBuilder();
-
-            for (int i = 0; i < restaurant.getAreasForDeliveries().size(); i++) {
-
-                stringBuilder.append("איזור חלוקה").append(" - ").append(restaurant.getAreasForDeliveries().get(i).getAreaName());
-                stringBuilder.append("\n");
-                stringBuilder.append("עלות משלוח").append(" - ").append(restaurant.getAreasForDeliveries().get(i).getDeliveryCost());
-                stringBuilder.append("\n");
-                stringBuilder.append("מינימום לזמנה").append(" - ").append(restaurant.getAreasForDeliveries().get(i).getMinToDeliver());
-                stringBuilder.append("\n");
-                stringBuilder.append("זמן משלוח").append(" - ").append(restaurant.getAreasForDeliveries().get(i).getTimeOfDelivery());
-                stringBuilder.append("\n");
-
-            }
-
-            areaOfDeliveryTextView.setText(stringBuilder);
-
-
+            openCloseHoursListView.setAdapter(new OpenCloseRestaurantHoursAdapter(this, restaurant.getOpenHour(), restaurant.getCloseHour()));
+            areaForDeliveryListView.setAdapter(new AreasForDeliveryAdapter(this, restaurant.getAreasForDelivery()));
 
             previewRestaurantBtn.setOnClickListener(new View.OnClickListener() {
                 @Override

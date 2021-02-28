@@ -15,8 +15,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Spinner;
@@ -94,8 +92,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
                 EditText dishPriceEditText = popUpView.findViewById(R.id.dish_price_edit_text_dish_details_pop_up_window);
                 Button takeDishPic = popUpView.findViewById(R.id.dish_picture_btn_dish_details_pop_up_window);
                 Button addDishBtn = popUpView.findViewById(R.id.add_dish_btn_dish_details_pop_up_window);
-                CheckBox pizzaCheckBox = popUpView.findViewById(R.id.check_box_pizza_classification_dish_details_pop_up_window);
-                EditText numOfPizzaDishEditText = popUpView.findViewById(R.id.num_of_pizza_dish_dish_details_pop_up_window);
 
 
                 takeDishPic.setOnClickListener(new View.OnClickListener() {
@@ -104,24 +100,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
                         //TODO: HANDLE ALL TAKING PICTURES BTN METHODS
                     }
                 });
-
-
-
-
-                pizzaCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                    @Override
-                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                        if (isChecked){
-                            numOfPizzaDishEditText.setVisibility(View.VISIBLE);
-                        }else {
-                            numOfPizzaDishEditText.setText(null);
-                            numOfPizzaDishEditText.setVisibility(View.INVISIBLE);
-                        }
-
-                    }
-                });
-
 
 
 
@@ -140,24 +118,12 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
 
                             Dish dish = new Dish(name, details, new ArrayList<>(), Integer.parseInt(price), null);
 
-
-                            //CHECK BUTTON FOR PIZZA ORDER
-//                            if (pizzaCheckBox.isChecked()){
-//                                if (!numOfPizzaDishEditText.getText().toString().isEmpty()){
-//                                    dish.setNumOfPizzas(Integer.parseInt(numOfPizzaDishEditText.getText().toString()));
-//                                }else
-//                                    Toast.makeText(context, "חובה לרשום כמות מנות", Toast.LENGTH_SHORT).show();
-//                            }
-
-
                             menu.getClassifications().get(position).getDishList().add(dish);
-//                            dishMenuAdapters.add(null);
-//                            dishMenuAdapters.get(position).notifyDataSetChanged();
                             addInitializeDishMenuRecyclerView(holder, position, context);
                             areaDialog.dismiss();
 
                         } else
-                            Toast.makeText(context, "המנה הוספה בהצלחה", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "יש למלא את הפרטים", Toast.LENGTH_SHORT).show();
 
 
                     }
@@ -165,24 +131,25 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
 
 
                 areaDialog.create();
+                areaDialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                 areaDialog.show();
-
             }
         });
 
 
-
-        holder.addClassificationChangeBtn.setOnClickListener(new View.OnClickListener() {
+        holder.deleteClassificationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                preformAddChange(position);
+//                preformAddChange(position);
+                menu.getClassifications().remove(position);
+                notifyDataSetChanged();
 
             }
         });
 
 
-        //POSITION NEEDS TO BE SMALLER IN 1
+        //POSITION NEEDS TO BE SMALLER BY 1
         if (dishMenuAdapters.size() < position) {
             addInitializeDishMenuRecyclerView(holder, position, context);
 
@@ -192,15 +159,8 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
                 if (dishMenuAdapters.get(position) == null) {
                     initializeDishMenuRecyclerView(holder, position, context);
                 } else dishMenuAdapters.get(position).notifyDataSetChanged();
-            }else addInitializeDishMenuRecyclerView(holder, position, context);
+            } else addInitializeDishMenuRecyclerView(holder, position, context);
         }
-
-//        if (dishMenuAdapters.size() > position + 1){
-//            dishMenuAdapters.get(position).notifyDataSetChanged();
-//        }
-
-        //TODO: CONTINUE TOMORROW   *******///////////////////////////////////////////////////////////////////////////
-        //TODO://///////////////////////////////////*******///////////////////////////////////////////////////////////////////////////*******///////////////////////////////////////////////////////////////////////////
     }
 
 
@@ -387,7 +347,7 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
                                         createChange = new Changes();
                                         createChange.setChangesTypesEnum(Changes.ChangesTypesEnum.CLASSIFICATION_CHOICE);
 
-                                        if (!amountOfFreeEditText.getText().toString().isEmpty()){
+                                        if (!amountOfFreeEditText.getText().toString().isEmpty()) {
                                             createChange.setFreeSelection(Integer.parseInt(amountOfFreeEditText.getText().toString()));
                                         }
 
@@ -405,7 +365,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
 
                                     }
                                 });
-
 
 
                                 alertDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "לא", new DialogInterface.OnClickListener() {
@@ -788,7 +747,7 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
                     });
 
 
-                }else if (changeViewFlipper.getCurrentView().getId() == addPizzaChangeView.getId()){
+                } else if (changeViewFlipper.getCurrentView().getId() == addPizzaChangeView.getId()) {
 
 
                     Log.i("CHOOSER", Changes.ChangesTypesEnum.PIZZA.toString());
@@ -816,17 +775,13 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
                     ListView pizzaChangesAddedListView = addPizzaChangeView.findViewById(R.id.pizza_change_added_list_view_add_pizza_change_layout);
 
 
-
-                    if (changePosition != -1){
+                    if (changePosition != -1) {
                         pizzaChangesAddedListView.setAdapter(new PizzaChangesAdapter(context, menu.getClassifications().get(holderPosition).getChangesList().get(changePosition)));
                         pizzaChangesListView.setAdapter(new PizzaChangesAdapter(context, menu.getClassifications().get(holderPosition).getChangesList().get(changePosition), pizzaChangesAddedListView));
-                    }else {
+                    } else {
                         pizzaChangesAddedListView.setAdapter(new PizzaChangesAdapter(context, createChange));
                         pizzaChangesListView.setAdapter(new PizzaChangesAdapter(context, createChange, pizzaChangesAddedListView));
                     }
-
-
-
 
 
                 }
@@ -840,9 +795,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
 
             }
         });
-
-
-
 
 
         addChangeBtn.setOnClickListener(new View.OnClickListener() {
@@ -872,8 +824,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
     }
 
 
-
-
     private void createNewChanges(RegularChange regularChange, AutoCompleteTextView autoCompleteTextViewChangesNames, Changes.ChangesTypesEnum changesTypesEnum, int selection) {
         if (createChange.getChangeName() != null) {
 
@@ -896,9 +846,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
     }
 
 
-
-
-
     private void initializeDishMenuRecyclerView(ClassificationMenuViewHolder holder, int position, Context context) {
 
         holder.dishRecyclerView.setHasFixedSize(false);
@@ -909,9 +856,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
         holder.dishRecyclerView.setAdapter(dishMenuAdapter);
 
     }
-
-
-
 
 
     private void addInitializeDishMenuRecyclerView(ClassificationMenuViewHolder holder, int position, Context context) {
@@ -926,9 +870,6 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
     }
 
 
-
-
-
     @Override
     public int getItemCount() {
         return menu.getClassifications().size();
@@ -938,7 +879,7 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
     public class ClassificationMenuViewHolder extends RecyclerView.ViewHolder {
 
         TextView headLineTextView;
-        Button addDishBtn, addClassificationChangeBtn;
+        Button addDishBtn, deleteClassificationBtn;
         RecyclerView dishRecyclerView;
 
         public ClassificationMenuViewHolder(@NonNull View itemView) {
@@ -948,7 +889,7 @@ public class ClassificationMenuAdapter extends RecyclerView.Adapter<Classificati
             headLineTextView = itemView.findViewById(R.id.title_text_view_classification_menu_item);
             addDishBtn = itemView.findViewById(R.id.add_dish_btn_classification_menu_item);
             dishRecyclerView = itemView.findViewById(R.id.dish_recycler_view_classification_menu_dish_item);
-            addClassificationChangeBtn = itemView.findViewById(R.id.add_classification_change_btn_classification_menu_item);
+            deleteClassificationBtn = itemView.findViewById(R.id.delete_classification_btn_classification_menu_item);
 
         }
     }

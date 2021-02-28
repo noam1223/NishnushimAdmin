@@ -15,8 +15,9 @@
         android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="בניית תפריט המסעדה"
-        android:textColor="@color/black"
+        android:textColor="@color/custom_blue"
         android:textSize="16sp"
+        android:fontFamily="@font/arimo_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,21 +26,48 @@
     <Button
         android:id="@+id/add_classification_btn_add_menu_activity"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="33dp"
         android:layout_below="@id/head_line_activity_add_menu"
-        android:layout_marginTop="24dp"
-        android:text="הוסף סיווג" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btn_sign_in_clicked_background"
+        android:fontFamily="@font/assistant_bold"
+        android:text="הוסף סיווג"
+        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/head_line_activity_add_menu" />
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/add_changes_btn_add_menu_activity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:layout_below="@id/add_classification_btn_add_menu_activity"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginLeft="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginRight="16dp"-->
+<!--        android:background="@drawable/btn_sign_in_clicked_background"-->
+<!--        android:fontFamily="@font/assistant_bold"-->
+<!--        android:text="הוסף שינוי"-->
+<!--        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"-->
+<!--        android:textSize="16sp" />-->
+
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_above="@id/add_menu_to_restaurant_btn_add_menu_activity"
         android:layout_below="@id/add_classification_btn_add_menu_activity"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
         android:layoutDirection="rtl"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp">
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -53,12 +81,22 @@
 
     <Button
         android:id="@+id/add_menu_to_restaurant_btn_add_menu_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="164dp"
+        android:layout_height="33dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:text="הוסף תפריט" />
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/btn_sign_in_clicked_background"
+        android:fontFamily="@font/assistant_bold"
+        android:text="הוסף תפריט"
+        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
 
 
 </RelativeLayout>

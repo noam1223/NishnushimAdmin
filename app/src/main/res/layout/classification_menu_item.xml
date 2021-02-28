@@ -9,34 +9,64 @@
     android:padding="8dp">
 
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/title_text_view_classification_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:paddingRight="19dp"
+            android:text="תת כותרת"
+            android:layout_gravity="center"
+            android:textColor="@color/custom_blue"
+            android:textSize="15sp"
+            android:fontFamily="@font/assistant_regular"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
     <Button
         android:id="@+id/add_dish_btn_classification_menu_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:text="הוסף מנה" />
+        android:layout_width="168dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_sign_in_clicked_background"
+        android:fontFamily="@font/assistant_bold"
+        android:text="הוסף מנה"
+        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+
 
     <Button
-        android:id="@+id/add_classification_change_btn_classification_menu_item"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
-        android:text="שינויים לסיווג"
-        android:layout_marginTop="12dp"/>
-
-
-    <TextView
-        android:id="@+id/title_text_view_classification_menu_item"
-        android:layout_width="match_parent"
+        android:id="@+id/delete_classification_btn_classification_menu_item"
+        android:layout_width="168dp"
         android:layout_height="33dp"
-        android:gravity="center_vertical"
-        android:paddingRight="19dp"
-        android:text="תת כותרת"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_sign_in_clicked_background"
+        android:fontFamily="@font/assistant_bold"
+        android:text="מחק סיווג"
+        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView

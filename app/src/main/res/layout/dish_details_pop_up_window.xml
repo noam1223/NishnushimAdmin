@@ -54,34 +54,7 @@
 
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layoutDirection="rtl">
 
-        <CheckBox
-            android:id="@+id/check_box_pizza_classification_dish_details_pop_up_window"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="מנת פיצה"/>
-
-
-
-        <EditText
-            android:id="@+id/num_of_pizza_dish_dish_details_pop_up_window"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="כמות מנות"
-            android:gravity="center"
-            android:layout_marginRight="12dp"
-            android:visibility="gone"/>
-
-
-
-
-
-    </LinearLayout>
 
 
 
@@ -103,7 +76,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:text="הוסף מונה" />
+        android:layout_marginTop="12dp"
+        android:text="הוסף מנה" />
 
 
 </LinearLayout>

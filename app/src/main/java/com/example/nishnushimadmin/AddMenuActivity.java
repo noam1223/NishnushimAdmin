@@ -75,75 +75,64 @@ public class AddMenuActivity extends AppCompatActivity {
         classificationRecyclerView = findViewById(R.id.recycler_view_classification_add_menu_activity);
 
 
-//        if (getIntent().getSerializableExtra("restaurant") != null && getIntent().getSerializableExtra("key") != null) {
-
-//            restaurant = new Restaurant();
-//            restaurant.setMenu(new Menu());
-
-//            key = "134255";
-
-            restaurant = (Restaurant) getIntent().getSerializableExtra("restaurant");
+        restaurant = (Restaurant) getIntent().getSerializableExtra("restaurant");
 
 
-            //UPDATE UI
-            headLineTextView.setText(restaurant.getName());
-            initializeClassificationRecyclerView();
+        //UPDATE UI
+        headLineTextView.setText(restaurant.getName());
+        initializeClassificationRecyclerView();
 
-            //SERVER SIDE
-            db = FirebaseFirestore.getInstance();
-
-
-
-            addClassificationBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    View popUpView = getLayoutInflater().inflate(R.layout.classification_name_pop_up_window, null);
-                    Dialog areaDialog = new Dialog(AddMenuActivity.this);
-                    areaDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-                    areaDialog.setContentView(popUpView);
-
-                    EditText editText = popUpView.findViewById(R.id.classification_name_edit_text_classification_pop_up_window);
-                    Button button = popUpView.findViewById(R.id.add_classification_name_btn_classification_pop_up_window);
+        //SERVER SIDE
+        db = FirebaseFirestore.getInstance();
 
 
-                    button.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
+        addClassificationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-                            if (!editText.getText().toString().isEmpty()) {
+                View popUpView = getLayoutInflater().inflate(R.layout.classification_name_pop_up_window, null);
+                Dialog areaDialog = new Dialog(AddMenuActivity.this);
+                areaDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                areaDialog.setContentView(popUpView);
 
-                                restaurant.getMenu().getClassifications().add(new Classification(editText.getText().toString(), new ArrayList<>(), new ArrayList<>()));
-
-                                classificationAdapter.notifyDataSetChanged();
-                                areaDialog.dismiss();
-
-                            } else
-                                Toast.makeText(AddMenuActivity.this, "יש למלא את שם הסיווג", Toast.LENGTH_SHORT).show();
-                        }
-                    });
+                EditText editText = popUpView.findViewById(R.id.classification_name_edit_text_classification_pop_up_window);
+                Button button = popUpView.findViewById(R.id.add_classification_name_btn_classification_pop_up_window);
 
 
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-                    areaDialog.create();
-                    areaDialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-                    areaDialog.show();
+                        if (!editText.getText().toString().isEmpty()) {
 
-                }
-            });
+                            restaurant.getMenu().getClassifications().add(new Classification(editText.getText().toString(), new ArrayList<>(), new ArrayList<>()));
+
+                            classificationAdapter.notifyDataSetChanged();
+                            areaDialog.dismiss();
+
+                        } else
+                            Toast.makeText(AddMenuActivity.this, "יש למלא את שם הסיווג", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
+                areaDialog.create();
+                areaDialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                areaDialog.show();
+
+            }
+        });
 
 
 
+        addMenuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                if (restaurant.getMenu() != null && restaurant.getMenu().getClassifications().size() > 0) {
 
-            addMenuBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    if (restaurant.getMenu() != null && restaurant.getMenu().getClassifications().size() > 0) {
-
-                        volleyPostMenu();
-                        finish();
+                    volleyPostMenu();
+                    finish();
 
 //                        Map<String, Object> menuMap = new HashMap<>();
 //                        menuMap.put("menu", restaurant.getMenu());
@@ -171,17 +160,11 @@ public class AddMenuActivity extends AppCompatActivity {
 //
 //                            }
 //                        });
-                    }
                 }
-            });
-
-
-
-
-
-//        } else finish();
-
+            }
+        });
     }
+
 
 
     private void initializeClassificationRecyclerView() {
@@ -226,7 +209,7 @@ public class AddMenuActivity extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.PUT, postUrl, menuJsonObject, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                if (response != null && response.length() > 0){
+                if (response != null && response.length() > 0) {
                     Log.i("RESPONSE", response.toString());
                 }
             }
@@ -235,7 +218,7 @@ public class AddMenuActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
                 Log.i("MENU ERROR ADD", error.getMessage());
             }
-        }){
+        }) {
             @Override
             protected Response<JSONObject> parseNetworkResponse(NetworkResponse response) {
                 try {
@@ -274,8 +257,7 @@ public class AddMenuActivity extends AppCompatActivity {
                 JSONArray dishJsonArray = new JSONArray();
 
 
-
-                for (Dish dish : classification.getDishList()){
+                for (Dish dish : classification.getDishList()) {
 
                     Log.i("DISH ADD MENU", dish.toString());
 
@@ -286,7 +268,7 @@ public class AddMenuActivity extends AppCompatActivity {
                     dishJsonObject.put("price", dish.getPrice());
 
 
-                    for (Changes changes : dish.getChanges()){
+                    for (Changes changes : dish.getChanges()) {
                         JSONObject changeDishJsonObject = new JSONObject();
                         changeDishJsonObject.put("changeName", changes.getChangeName());
                         changeDishJsonObject.put("freeSelection", changes.getFreeSelection());
@@ -303,8 +285,7 @@ public class AddMenuActivity extends AppCompatActivity {
                 }
 
 
-
-                for (Changes changes : classification.getChangesList()){
+                for (Changes changes : classification.getChangesList()) {
                     JSONObject changeClassificationJsonObject = new JSONObject();
                     changeClassificationJsonObject.put("changeName", changes.getChangeName());
                     changeClassificationJsonObject.put("freeSelection", changes.getFreeSelection());
@@ -324,7 +305,7 @@ public class AddMenuActivity extends AppCompatActivity {
 
             menuJsonObject.put("classifications", classificationJsonArray);
 
-        }catch (JSONException e){
+        } catch (JSONException e) {
             e.printStackTrace();
         }
         return menuJsonObject;
@@ -333,15 +314,15 @@ public class AddMenuActivity extends AppCompatActivity {
     private JSONArray getChangesTypeJsonArray(Changes changes) throws JSONException {
         JSONArray changesTypeJsonArray = new JSONArray();
 
-        for (Object object : changes.getChangesByTypesList()){
+        for (Object object : changes.getChangesByTypesList()) {
             JSONObject changeTypeJsonObject = new JSONObject();
 
-            switch (changes.getChangesTypesEnum()){
+            switch (changes.getChangesTypesEnum()) {
 
                 case ONE_CHOICE:
                     RegularChange regularChange = (RegularChange) object;
                     changeTypeJsonObject.put("change", regularChange.getChange());
-                    changeTypeJsonObject.put("price",regularChange.getPrice());
+                    changeTypeJsonObject.put("price", regularChange.getPrice());
                     break;
 
                 case PIZZA:
@@ -358,14 +339,14 @@ public class AddMenuActivity extends AppCompatActivity {
                 case MULTIPLE:
                     RegularChange regularChange1 = (RegularChange) object;
                     changeTypeJsonObject.put("change", regularChange1.getChange());
-                    changeTypeJsonObject.put("price",regularChange1.getPrice());
+                    changeTypeJsonObject.put("price", regularChange1.getPrice());
 
                     break;
 
                 case VOLUME:
                     RegularChange regularChange2 = (RegularChange) object;
                     changeTypeJsonObject.put("change", regularChange2.getChange());
-                    changeTypeJsonObject.put("price",regularChange2.getPrice());
+                    changeTypeJsonObject.put("price", regularChange2.getPrice());
                     break;
 
                 case DISH_CHOICE:

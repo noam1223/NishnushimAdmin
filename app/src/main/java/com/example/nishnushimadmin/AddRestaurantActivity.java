@@ -35,7 +35,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.nishnushimadmin.adapters.AreaForDeliveryAdapter;
-import com.example.nishnushimadmin.helpClasses.AreasForDeliveries;
+import com.example.nishnushimadmin.helpClasses.AreasForDelivery;
 import com.example.nishnushimadmin.helpClasses.Classification;
 import com.example.nishnushimadmin.helpClasses.Dish;
 import com.example.nishnushimadmin.helpClasses.Menu;
@@ -81,7 +81,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
     List<String> closeHoursList = new ArrayList<>();
     List<Integer> classificationHandleList = new ArrayList<>();
     List<String> classificationHandleListStrings = new ArrayList<>();
-    List<AreasForDeliveries> areasForDeliveries = new ArrayList<>();
+    List<AreasForDelivery> areasForDeliveries = new ArrayList<>();
     String isKosherString = "", discountString = "";
     Uri logoImageUri, profileImageUri;
     boolean fromOrTo = false; // false - from , true - to
@@ -112,7 +112,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
         closeHoursList.addAll(restaurant.getCloseHour());
         classificationHandleList.addAll(restaurant.getClassificationList());
         phoneNumberEditText.setText(restaurant.getPhoneNumber());
-        areasForDeliveries.addAll(restaurant.getAreasForDeliveries());
+        areasForDeliveries.addAll(restaurant.getAreasForDelivery());
 
         if (restaurant.isKosher()){
             kosherRadioGroup.getChildAt(0).performClick();
@@ -437,7 +437,7 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
 
 
                     if (!areaName.isEmpty() && !minToDeliver.isEmpty() && !timeOfDelivery.isEmpty()) {
-                        areasForDeliveries.add(new AreasForDeliveries(areaName, Integer.parseInt(deliveryCost), Integer.parseInt(minToDeliver), Integer.parseInt(timeOfDelivery)));
+                        areasForDeliveries.add(new AreasForDelivery(areaName, Integer.parseInt(deliveryCost), Integer.parseInt(minToDeliver), Integer.parseInt(timeOfDelivery)));
                         areaDialog.dismiss();
                     }
                 }
@@ -883,12 +883,12 @@ public class AddRestaurantActivity extends AppCompatActivity implements View.OnC
             postData.put("myAddress", myAddressPostData);
 
             JSONArray jsonAreasForDeliveries = new JSONArray();
-            for (AreasForDeliveries areasForDeliveries : restaurant.getAreasForDeliveries()){
+            for (AreasForDelivery areasForDelivery : restaurant.getAreasForDelivery()){
                 JSONObject areasForDeliveryPostData = new JSONObject();
-                areasForDeliveryPostData.put("areaName", areasForDeliveries.getAreaName());
-                areasForDeliveryPostData.put("deliveryCost", areasForDeliveries.getDeliveryCost());
-                areasForDeliveryPostData.put("minToDeliver", areasForDeliveries.getMinToDeliver());
-                areasForDeliveryPostData.put("timeOfDelivery", areasForDeliveries.getTimeOfDelivery());
+                areasForDeliveryPostData.put("areaName", areasForDelivery.getAreaName());
+                areasForDeliveryPostData.put("deliveryCost", areasForDelivery.getDeliveryCost());
+                areasForDeliveryPostData.put("minToDeliver", areasForDelivery.getMinToDeliver());
+                areasForDeliveryPostData.put("timeOfDelivery", areasForDelivery.getTimeOfDelivery());
                 jsonAreasForDeliveries.put(areasForDeliveryPostData);
             }
             postData.put("areasForDeliveries", jsonAreasForDeliveries);

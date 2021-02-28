@@ -4,240 +4,184 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
     tools:context=".RestaurantProfileActivity">
 
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-    <ImageButton
-        android:id="@+id/back_btn_restaurant_profile_activity"
-        android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="12dp"
-        android:background="@drawable/ic_baseline_arrow_back_24"
-        android:backgroundTint="#000000"
-        android:rotation="180" />
-
-
-    <TextView
-        android:id="@+id/head_line_text_view_restaurant_profile_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="שם המסעדה"
-        android:textColor="#000000"
-        android:textSize="24sp" />
-
-
-
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="right"
-        android:orientation="vertical"
-        android:layout_below="@id/head_line_text_view_restaurant_profile_activity"
-        android:layout_marginTop="24dp">
+        android:layoutDirection="rtl">
 
 
-        <TextView
-            android:id="@+id/full_address_restaurant_profile_activity"
-            android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/back_btn_restaurant_profile_activity"
+            android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="12dp"
-            android:text="כתובת: "
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
-
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:backgroundTint="@color/white"
+            android:rotation="180"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layoutDirection="rtl"
-            android:orientation="vertical">
-
-
-            <TextView
-                android:id="@+id/open_hours_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="12dp"
-                android:layout_marginRight="12dp"
-                android:text="שעות פתיחה: "
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/day_one_open_close_hour_text_view_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="יום ראשון"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="4dp"/>
-
-
-
-            <TextView
-                android:id="@+id/day_two_open_close_hour_text_view_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="יום שני"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="4dp"/>
-
-
-            <TextView
-                android:id="@+id/day_three_open_close_hour_text_view_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="יום שלישי"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="4dp"/>
-
-
-            <TextView
-                android:id="@+id/day_four_open_close_hour_text_view_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="יום רביעי"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="4dp"/>
-
-
-            <TextView
-                android:id="@+id/day_five_open_close_hour_text_view_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="יום חמישי"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="4dp"/>
-
-
-            <TextView
-                android:id="@+id/day_six_open_close_hour_text_view_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="יום שישי"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="4dp"/>
-
-
-            <TextView
-                android:id="@+id/day_seven_open_close_hour_text_view_restaurant_profile_activity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="יום שבת"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="4dp"/>
-
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:id="@+id/linear_layout_area_of_delivery_restaurant_profile_activity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:layoutDirection="rtl">
-
+            app:layout_constraintTop_toTopOf="parent">
 
 
             <TextView
-                android:id="@+id/area_of_delivery_text_view_restaurant_profile_activity"
+                android:id="@+id/head_line_text_view_restaurant_profile_activity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="איזור חלוקה אחד"
-                android:layout_marginRight="12dp"
-                android:layout_marginTop="12dp"
-                android:textColor="#000000"
-                android:textSize="16sp"/>
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/arimo_bold"
+                android:gravity="center"
+                android:text="שם המסעדה"
+                android:textColor="@color/custom_blue"
+                android:textSize="24sp" />
 
 
+            <ImageView
+                android:id="@+id/profile_image_view_restaurant_profile_activity"
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                android:layout_marginTop="8dp"
+                android:background="#000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="right"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/full_address_restaurant_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/arimo_regular"
+                    android:text="כתובת: "
+                    android:textColor="@color/custom_blue"
+                    android:textSize="16sp" />
+
+
+                <com.example.nishnushimadmin.helpClasses.UIHelp.NonScrollListView
+                    android:id="@+id/open_close_hours_list_view_restaurant_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0px"
+                    android:divider="@null"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/more_details_areas_background_yellow"/>
+
+
+
+
+                <com.example.nishnushimadmin.helpClasses.UIHelp.NonScrollListView
+                    android:id="@+id/area_for_delivery_list_view_restaurant_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="12dp"
+                    android:dividerHeight="0dp"
+                    android:divider="@null"
+                    android:background="@drawable/more_details_areas_background_yellow"/>
+
+
+
+
+                <TextView
+                    android:id="@+id/phone_number_restaurant_profile_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:text="מספר טלפון: "
+                    android:textColor="@color/custom_blue"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/arimo_regular"/>
+
+
+                <Button
+                    android:id="@+id/menu_btn_restaurant_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/btn_sign_in_clicked_background_opossite"
+                    android:fontFamily="@font/assistant_bold"
+                    android:text="תפריט"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@drawable/btn_sign_in_clicked_text_view"
+                    android:textStyle="bold" />
+
+
+
+
+                <Button
+                    android:id="@+id/edit_profile_restaurant_btn_restaurant_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/btn_sign_in_clicked_background_opossite"
+                    android:fontFamily="@font/assistant_bold"
+                    android:text="ערוך פרופיל"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@drawable/btn_sign_in_clicked_text_view"
+                    android:textStyle="bold" />
+
+
+
+                <Button
+                    android:id="@+id/preview_restaurant_btn_restaurant_profile_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/btn_sign_in_clicked_background_opossite"
+                    android:fontFamily="@font/assistant_bold"
+                    android:text="תצוגה מקדימה"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@drawable/btn_sign_in_clicked_text_view"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
-
-
-
-
-
-
-        <TextView
-            android:id="@+id/phone_number_restaurant_profile_activity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="12dp"
-            android:text="מספר טלפון: "
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
-
-        <Button
-            android:id="@+id/menu_btn_restaurant_profile_activity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:layout_marginRight="32dp"
-            android:text="תפריט" />
-
-
-        <Button
-            android:id="@+id/edit_profile_restaurant_btn_restaurant_profile_activity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:layout_marginRight="32dp"
-            android:text="ערוך פרופיל" />
-
-
-        <Button
-            android:id="@+id/preview_restaurant_btn_restaurant_profile_activity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="12dp"
-            android:layout_marginRight="32dp"
-            android:text="תצוגה מקדימה" />
-
-
-    </LinearLayout>
-
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

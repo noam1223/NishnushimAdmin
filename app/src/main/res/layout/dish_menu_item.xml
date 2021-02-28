@@ -3,7 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:layout_marginTop="12dp">
+    android:layout_marginTop="12dp"
+    android:background="@drawable/more_details_areas_background_yellow"
+    android:layout_marginLeft="12dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
 
 
     <LinearLayout
@@ -63,15 +67,46 @@
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/add_change_btn_dish_menu_item"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginTop="24dp"
-        android:text="הוסף שינוי" />
+        android:layoutDirection="rtl"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp">
+
+    <Button
+        android:id="@+id/add_change_btn_dish_menu_item"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/btn_sign_in_clicked_background"
+        android:fontFamily="@font/assistant_bold"
+        android:text="הוסף שינוי למנה X"
+        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/delete_dish_btn_dish_menu_item"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/btn_sign_in_clicked_background"
+            android:fontFamily="@font/assistant_bold"
+            android:text="מחק מנה"
+            android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
 
 
 </LinearLayout>
