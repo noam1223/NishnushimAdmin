@@ -20,11 +20,10 @@ public class Changes implements Serializable {
     }
 
 
-    String id;
+    int id;
     String changeName;
     public int freeSelection = 0;
     ChangesTypesEnum changesTypesEnum;
-
     List<Object> changesByTypesList = new ArrayList<>();
 
 
@@ -32,13 +31,12 @@ public class Changes implements Serializable {
     }
 
 
-    public Changes(String changeName, ChangesTypesEnum changesTypesEnum,List<Object> changesByTypesList) {
+    public Changes(int id, String changeName, int freeSelection, ChangesTypesEnum changesTypesEnum, List<Object> changesByTypesList) {
+        this.id = id;
         this.changeName = changeName;
+        this.freeSelection = freeSelection;
         this.changesTypesEnum = changesTypesEnum;
         this.changesByTypesList = changesByTypesList;
-
-
-
     }
 
 
@@ -75,11 +73,11 @@ public class Changes implements Serializable {
         this.freeSelection = freeSelection;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 }

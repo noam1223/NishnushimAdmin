@@ -41,20 +41,20 @@
 
 
 
-<!--    <Button-->
-<!--        android:id="@+id/add_changes_btn_add_menu_activity"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="33dp"-->
-<!--        android:layout_below="@id/add_classification_btn_add_menu_activity"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginLeft="16dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:layout_marginRight="16dp"-->
-<!--        android:background="@drawable/btn_sign_in_clicked_background"-->
-<!--        android:fontFamily="@font/assistant_bold"-->
-<!--        android:text="הוסף שינוי"-->
-<!--        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"-->
-<!--        android:textSize="16sp" />-->
+    <Button
+        android:id="@+id/add_changes_btn_add_menu_activity"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_below="@id/add_classification_btn_add_menu_activity"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btn_sign_in_clicked_background"
+        android:fontFamily="@font/assistant_bold"
+        android:text="הוסף שינוי"
+        android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+        android:textSize="16sp" />
 
 
 
@@ -63,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/add_menu_to_restaurant_btn_add_menu_activity"
-        android:layout_below="@id/add_classification_btn_add_menu_activity"
+        android:layout_below="@id/add_changes_btn_add_menu_activity"
         android:layoutDirection="rtl"
         android:orientation="vertical"
         android:layout_marginBottom="6dp"
