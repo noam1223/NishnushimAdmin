@@ -2,6 +2,12 @@
 # NishnushimAdmin
 
 
+## Add restaurant
+
+
+
+https://user-images.githubusercontent.com/39114234/128853623-bba2d832-1c5e-4a57-bdd3-a9d2eca8bc88.mp4
+
 
 ## List of the users
 
