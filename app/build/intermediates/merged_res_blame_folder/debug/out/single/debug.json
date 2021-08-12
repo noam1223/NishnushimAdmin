@@ -1,0 +1,662 @@
+[
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_add_restaurant.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_add_restaurant.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_arimo_regular.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/arimo_regular.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_tomato.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_tomato.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_filter_delivery_time.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-mdpi/ic_filter_delivery_time.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_black_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_black_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_ic_baseline_arrow_back_24.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_filter_locator.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_filter_locator.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_onion.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_onion.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_add_menu.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_add_menu.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_ic_baseline_delete_24.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_hot_pepper.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_hot_pepper.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_filter_recommendation.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-mdpi/ic_filter_recommendation.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_filter_locator.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-mdpi/ic_filter_locator.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_change_by_volume_layout.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_change_by_volume_layout.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_green_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_green_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_pizza_change_layout.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_pizza_change_layout.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_hot_pepper.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_hot_pepper.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_regular_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/regular_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_onion.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_onion.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_pizza_change_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/pizza_change_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_filter_take_away.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-mdpi/ic_filter_take_away.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_assistant_bold.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/assistant_bold.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_filter_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/filter_shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_filter_take_away.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_filter_take_away.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_filter_recommendation.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_filter_recommendation.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_onion.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_onion.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_restaurant_profile.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_restaurant_profile.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_filter_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/filter_shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_icon_add_button.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-mdpi/ic_icon_add_button.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_add_changes.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_add_changes.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_bulgarian_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_bulgarian_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_black_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_black_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_item_restauran_details.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/item_restauran_details.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_filter_delivery_time.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_filter_delivery_time.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_bottom_line_selector.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/bottom_line_selector.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_filter_locator.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_filter_locator.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_open_hours_dialog_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/open_hours_dialog_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_filter_recommendation.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_filter_recommendation.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_tomato.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_tomato.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_remove_dish_changes_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/remove_dish_changes_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_bulgarian_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_bulgarian_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_hot_pepper.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_hot_pepper.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_tomato.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_tomato.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_classification_change_layout.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_classification_change_layout.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_corn.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_corn.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_green_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_green_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_black_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_black_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_filter_recommendation.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_filter_recommendation.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_full_address_background_restaurant_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/full_address_background_restaurant_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_hot_pepper.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_hot_pepper.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_black_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_black_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_restaurant_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/restaurant_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_arimo_bold.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/arimo_bold.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_filter_locator.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_filter_locator.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_user_profile.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_user_profile.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_area_for_delivery_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/area_for_delivery_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_chooser.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_chooser.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_icon_add_button.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-hdpi/ic_icon_add_button.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_btn_sign_in_clicked_text_view.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/btn_sign_in_clicked_text_view.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_user_list.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_user_list.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_filter_delivery_time.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_filter_delivery_time.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_icon_add_button.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_icon_add_button.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_bulgarian_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_bulgarian_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_green_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_green_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_assistant_light.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/assistant_light.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_detail_change_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/detail_change_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_remove_changes_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/remove_changes_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_user_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/user_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_assistant_extrabold.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/assistant_extrabold.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_pineapple.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_pineapple.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_filter_delivery_time.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-hdpi/ic_filter_delivery_time.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_filter_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/filter_shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_pineapple.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_pineapple.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_list_of_area_for_delivery_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/list_of_area_for_delivery_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_dish_menu_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/dish_menu_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_btn_sign_in_clicked_background_opossite.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/btn_sign_in_clicked_background_opossite.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_onion.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_onion.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_filter_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/filter_shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_filter_locator.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-hdpi/ic_filter_locator.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_restaurant_area_for_deliver_detail_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/restaurant_area_for_deliver_detail_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_tomato.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_tomato.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_onion.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_onion.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_pineapple.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_pineapple.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_dish_details_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/dish_details_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_change_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_change_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_bulgarian_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_bulgarian_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_corn.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_corn.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_classification_menu_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/classification_menu_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_filter_take_away.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_filter_take_away.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_assistant_medium.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/assistant_medium.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_btn_sign_in_clicked_text_view_opposite.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/btn_sign_in_clicked_text_view_opposite.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_filter_recommendation.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_filter_recommendation.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_assistant_extralight.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/assistant_extralight.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_cost_pizza_change_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/cost_pizza_change_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_filter_take_away.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_filter_take_away.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_assistant_regular.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/assistant_regular.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_filter_take_away.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_filter_take_away.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_filter_delivery_time.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-ldpi/ic_filter_delivery_time.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_area_for_delivery_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_area_for_delivery_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_changes_dish_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_changes_dish_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_btn_bottom_line_selected.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/btn_bottom_line_selected.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_green_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_green_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_dish_change_selector_effect.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/dish_change_selector_effect.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_filter_locator.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_filter_locator.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_restaurants_list.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_restaurants_list.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_bulgarian_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_bulgarian_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_filter_delivery_time.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_filter_delivery_time.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_green_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_green_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_watch_existing_classification_changes_layout.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/watch_existing_classification_changes_layout.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_filter_recommendation.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-hdpi/ic_filter_recommendation.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_filter_locator.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-ldpi/ic_filter_locator.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_more_details_areas_background_yellow.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/more_details_areas_background_yellow.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_pineapple.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_pineapple.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_filter_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/filter_shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_black_olives.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_black_olives.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_classification_change_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_classification_change_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_pizza_change_corn.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxhdpi/pizza_change_corn.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_filter_take_away.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-hdpi/ic_filter_take_away.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_open_close_restaurant_hour_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/open_close_restaurant_hour_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_filter_recommendation.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-ldpi/ic_filter_recommendation.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_filter_delivery_time.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_filter_delivery_time.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_add_dish_change_by_dish_layout.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/add_dish_change_by_dish_layout.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_shekel_icon.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/shekel_icon.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_dish_change_selection_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/dish_change_selection_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_pizza_change_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xhdpi/pizza_change_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_icon_add_button.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_icon_add_button.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_classification_name_pop_up_window.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/classification_name_pop_up_window.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_icon_add_button.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-ldpi/ic_icon_add_button.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_tomato.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_tomato.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_icon_add_button.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_icon_add_button.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_icon_add_button.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_icon_add_button.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_pineapple.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_pineapple.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_filter_take_away.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/generated/res/pngs/debug/drawable-ldpi/ic_filter_take_away.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_yellow_rounded_custom_btn.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/yellow_rounded_custom_btn.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_hot_pepper.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_hot_pepper.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_blue_rounded_custom_btn.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/blue_rounded_custom_btn.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_btn_sign_in_clicked_background.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/btn_sign_in_clicked_background.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_pizza_change_corn.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-xxxhdpi/pizza_change_corn.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-hdpi_pizza_change_corn.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-hdpi/pizza_change_corn.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/font_assistant_semibold.ttf.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/font/assistant_semibold.ttf"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_restaurant_area_for_deliver_title_item.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/restaurant_area_for_deliver_title_item.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable_background_blue_width.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable/background_blue_width.xml"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/drawable-mdpi_pizza_change_cheese.png.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/drawable-mdpi/pizza_change_cheese.png"
+    },
+    {
+        "merged": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Volumes/DISKONKEY/Noam/AndroidStudioProjects/NishnushimAdmin/app/src/main/res/layout/activity_main.xml"
+    }
+]

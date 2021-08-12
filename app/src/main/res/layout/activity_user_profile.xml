@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserProfileActivity"
+    android:layoutDirection="rtl">
+
+
+    <TextView
+        android:id="@+id/head_line_text_view_user_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/arimo_bold"
+        android:gravity="center"
+        android:text="שם משתמש"
+        android:textColor="@color/custom_blue"
+        android:textSize="24sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/full_address_user_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/head_line_text_view_user_profile_activity"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/arimo_regular"
+        android:text="כתובת: "
+        android:textColor="@color/custom_blue"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/phone_number_user_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/full_address_user_profile_activity"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/arimo_regular"
+        android:text="מספר טלפון: "
+        android:textColor="@color/custom_blue"
+        android:textSize="16sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/email_user_profile_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_user_profile_activity"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/arimo_regular"
+        android:text="אימייל: "
+        android:textColor="@color/custom_blue"
+        android:textSize="16sp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

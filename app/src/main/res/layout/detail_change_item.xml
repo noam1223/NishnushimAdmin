@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="8dp">
+
+
+    <ImageButton
+        android:id="@+id/remove_change_btn_detail_changes_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_delete_24"/>
+
+
+
+    <TextView
+        android:id="@+id/change_detail_text_detail_changes_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="פירוט השינוי"
+        android:layout_marginRight="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

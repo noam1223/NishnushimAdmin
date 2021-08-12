@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:id="@+id/dish_name_text_view_add_changes_dish_pop_up_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="הוסף שינוי למנה - "
+            android:textColor="@color/custom_blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Spinner
+            android:id="@+id/spinner_changes_add_changes_dish_pop_up_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dish_name_text_view_add_changes_dish_pop_up_window" />
+
+
+        <ListView
+            android:id="@+id/changes_type_details_list_view_add_changes_dish_pop_up_window"
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/spinner_changes_add_changes_dish_pop_up_window" />
+
+
+        <TextView
+            android:id="@+id/added_dish_name_text_view_add_changes_dish_pop_up_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="שינויים קיימים"
+            android:textColor="@color/custom_blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/changes_type_details_list_view_add_changes_dish_pop_up_window" />
+
+
+        <ListView
+            android:id="@+id/added_changes_type_details_list_view_add_changes_dish_pop_up_window"
+            android:layout_width="match_parent"
+            android:layout_height="226dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/added_dish_name_text_view_add_changes_dish_pop_up_window" />
+
+
+        <Button
+            android:id="@+id/add_change_btn_add_changes_dish_pop_up_window"
+            android:layout_width="126dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_sign_in_clicked_background"
+            android:fontFamily="@font/assistant_bold"
+            android:text="הוסף שינוי"
+            android:textColor="@drawable/btn_sign_in_clicked_text_view_opposite"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/added_changes_type_details_list_view_add_changes_dish_pop_up_window" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

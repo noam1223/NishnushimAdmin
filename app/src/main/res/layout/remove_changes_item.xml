@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/custom_yellow">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+    <ImageButton
+        android:id="@+id/remove_change_btn_remove_changes_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_delete_24"/>
+
+
+
+    <TextView
+        android:id="@+id/change_detail_text_view_remove_changes_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="פירוט השינוי"
+        android:layout_marginRight="24dp"
+        android:textSize="18sp"
+        android:textColor="@color/custom_blue"
+        />
+
+
+    </LinearLayout>
+
+    <com.example.nishnushimadmin.helper.uihelper.NonScrollListView
+        android:id="@+id/detail_changes_list_view_remove_changes_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"/>
+
+</LinearLayout>
