@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">NishnushimAdmin</string>
-
-    <string name="passwordApp">12345678</string>
-
-    <string name="RESTAURANTS_PATH">Restaurants</string>
-    <string name="RESTAURANTS_MAIN">RestaurantsMain</string>
-    <string name="CITIES_PATH">Cities</string>
-</resources>
